@@ -8,7 +8,7 @@ using InterfaceLibrary;
 using CommonLibrary;
 using System.Transactions;
 
-namespace DataAccess
+namespace DataAccessLibrary
 {
     public class DataAccess:ParameterList, IDataAccess
     {

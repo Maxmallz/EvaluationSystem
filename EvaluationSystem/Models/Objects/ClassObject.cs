@@ -8,14 +8,19 @@ namespace Models.Objects
 {
     public class ClassObject
     {
+        private readonly int _classId;
+        private InstructorObject _instructor;
+        private CourseObject _course;
+        private string _className;
+
         public ClassObject()
         {
             this.Course = new CourseObject();
             this.Instructor = new InstructorObject();
         }
-        public int ClassId { get; set; }
-        public string ClassName { get; set; }
-        public CourseObject Course { get; set; }
-        public InstructorObject Instructor { get; set; }
+        public int ClassId { get => _classId; }
+        public string ClassName { get => _className; set => _className = value; }
+        public CourseObject Course { get => _course; set => _course = value; }
+        public InstructorObject Instructor { get => _instructor; set => _instructor = value; }
     }
 }

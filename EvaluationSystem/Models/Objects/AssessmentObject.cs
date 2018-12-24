@@ -23,7 +23,7 @@ namespace Models.Objects
             this.Team = new TeamObject();
             this._Class = new ClassObject();
         }
-        public int AssessmentId { get => _assessmentId; set => _assessmentId = value; }
+        public int AssessmentId { get => _assessmentId; }
         public StudentObject DoneBy { get => _doneBy; set => _doneBy = value; }
         public StudentObject DoneFor { get => _doneFor; set => _doneFor = value; }
         public int TotalValue { get => _totalValue; set => _totalValue = value; }

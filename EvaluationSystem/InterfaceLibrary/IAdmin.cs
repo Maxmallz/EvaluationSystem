@@ -9,6 +9,6 @@ namespace InterfaceLibrary
 {
     public interface IAdmin:IClass, ICourse, IRubric
     {
-        int AddUser<T>(UserObject user)where T: UserObject;
+        int AddUser<T>(T user)where T: UserObject;
     }
 }

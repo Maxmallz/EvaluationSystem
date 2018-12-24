@@ -139,6 +139,14 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj">
+      <Project>{6b19c37b-8e97-4dea-8f9e-99007dad2ee2}</Project>
+      <Name>CommonLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InterfaceLibrary\InterfaceLibrary.csproj">
+      <Project>{860b021b-2408-42d9-9f9c-114544a25312}</Project>
+      <Name>InterfaceLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IntermediateLibrary\IntermediateLibrary.csproj">
       <Project>{7ca3c101-0d91-4cb5-b680-6cca59b7f2bb}</Project>
       <Name>IntermediateLibrary</Name>

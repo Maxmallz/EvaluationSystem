@@ -7,8 +7,8 @@
     <ProjectGuid>{987D58A2-9360-40A4-95D4-3FBD2E863DC2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DataAccess</RootNamespace>
-    <AssemblyName>DataAccess</AssemblyName>
+    <RootNamespace>DataAccessLibrary</RootNamespace>
+    <AssemblyName>DataAccessLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

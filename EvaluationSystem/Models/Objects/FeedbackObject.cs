@@ -20,7 +20,7 @@ namespace Models.Objects
         private AssessmentObject _assessmentId;
         private FeedbackStatus _status;
 
-        public int FeedbackId { get => _feedbackId; set => _feedbackId = value; }
+        public int FeedbackId { get => _feedbackId;}
         public string Description { get => _description; set => _description = value; }
         public AssessmentObject AssessmentId { get => _assessmentId; set => _assessmentId = value; }
         public FeedbackStatus Status { get => _status; set => _status = value; }

@@ -12,9 +12,9 @@ namespace Models.Objects
     public class UserObject
     {
         public enum UserRole { Admin, Instructor, Student}
-        public UserObject(UserRole role)
+        public UserObject()
         {
-            userRole = role;
+            
         }
         
         public string UserId { get; set; }

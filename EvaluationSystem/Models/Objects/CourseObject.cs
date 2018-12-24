@@ -8,7 +8,10 @@ namespace Models.Objects
 {
     public class CourseObject
     {
-        public int CourseId { get; set; }
-        public string CourseName { get; set; }
+        private string _courseName;
+        private int _courseId;
+
+        public int CourseId { get => _courseId; set => _courseId = value; }
+        public string CourseName { get => _courseName; set => _courseName = value; }
     }
 }

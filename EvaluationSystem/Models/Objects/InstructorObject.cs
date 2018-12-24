@@ -10,9 +10,9 @@ namespace Models.Objects
     public class InstructorObject: UserObject
     {
         const UserRole _InstructorRole = UserRole.Instructor;
-        public InstructorObject():base(_InstructorRole)
+        public InstructorObject()
         {
-
+            base.userRole = _InstructorRole;
         }
     }
 }

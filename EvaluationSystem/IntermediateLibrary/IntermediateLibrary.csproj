@@ -48,6 +48,10 @@
     <Compile Include="UserConnect.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj">
+      <Project>{6b19c37b-8e97-4dea-8f9e-99007dad2ee2}</Project>
+      <Name>CommonLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataAccess\DataAccessLibrary.csproj">
       <Project>{987d58a2-9360-40a4-95d4-3fbd2e863dc2}</Project>
       <Name>DataAccessLibrary</Name>
