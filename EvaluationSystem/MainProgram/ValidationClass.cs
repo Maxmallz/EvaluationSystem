@@ -12,7 +12,7 @@ namespace MainProgram
     {
         public ValidationClass()
         {
-            AdminConnect adminConnect = new AdminConnect();
+            
         }
     }
 }

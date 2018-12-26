@@ -13,5 +13,10 @@ namespace Models.Objects
         {
             base.userRole = _studentRole;
         }
+        public List<ClassObject> _Class { get; set; }
+        public List<TeamObject> Team { get; set; }
+        public List<AssessmentObject> Assessment { get; set; }
+        public List<CourseObject> Course { get; set; }
+        public List<FeedbackObject> Feedback { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace Models.Objects
         {
             this.Class = new ClassObject();
         }
-        public int RubricId { get => _rubricId;}
+        public int RubricId { get => _rubricId; set => _rubricId = value; }
         public string RubricName { get => _rubricName; set => _rubricName = value; }
         public int MinGrade { get => _minGrade; set => _minGrade = value; }
         public int MaxGrade { get => _maxGrade; set => _maxGrade = value; }
