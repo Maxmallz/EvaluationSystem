@@ -9,6 +9,9 @@ namespace InterfaceLibrary
 {
     public interface IInstructor:ITeam, IAssessment, IReport,ICriterion
     {
-        int AssignStudentToTeam(List<StudentObject> students, TeamObject team);
+        int AddStudentToTeam(string studentId, int teamId);
+        int RemoveStudentFromTeam(string studentId, int teamId);
+        int AddStudentToClass(string studentId, int classId);
+        int RemoveStudentFromClass(string studentId, int classId);
     }
 }

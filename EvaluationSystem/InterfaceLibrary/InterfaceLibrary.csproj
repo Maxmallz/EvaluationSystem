@@ -46,7 +46,6 @@
     <Compile Include="IClass.cs" />
     <Compile Include="ICourse.cs" />
     <Compile Include="ICriterion.cs" />
-    <Compile Include="IFeedback.cs" />
     <Compile Include="IFileAccess.cs" />
     <Compile Include="IInstructor.cs" />
     <Compile Include="IReport.cs" />

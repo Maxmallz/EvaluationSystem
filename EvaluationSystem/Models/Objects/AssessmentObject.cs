@@ -15,6 +15,8 @@ namespace Models.Objects
         private TeamObject _team;
         private ClassObject _class;
         private string _feedback;
+        private string _feedbackStatus;
+        
 
         public AssessmentObject()
         {
@@ -30,5 +32,6 @@ namespace Models.Objects
         public TeamObject Team { get => _team; set => _team = value; }
         public ClassObject _Class { get => _class; set => _class = value; }
         public string Feedback { get => _feedback; set => _feedback = value; }
+        public string FeedbackStatus { get => _feedbackStatus; set => _feedbackStatus = value; }
     }
 }

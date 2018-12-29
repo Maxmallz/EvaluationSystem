@@ -17,6 +17,5 @@ namespace Models.Objects
         public List<TeamObject> Team { get; set; }
         public List<AssessmentObject> Assessment { get; set; }
         public List<CourseObject> Course { get; set; }
-        public List<FeedbackObject> Feedback { get; set; }
     }
 }

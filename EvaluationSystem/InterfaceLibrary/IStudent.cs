@@ -9,6 +9,6 @@ namespace InterfaceLibrary
 {
     public interface IStudent:IAssessment, IReport
     {
-        int AddFeedback(FeedbackObject feedback);
+        int MakeAssessment(AssessmentObject assessment);
     }
 }

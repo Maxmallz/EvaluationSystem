@@ -7,7 +7,6 @@ using Models.Objects;
 using InterfaceLibrary;
 using CommonLibrary;
 using DataAccessLibrary;
-using System.Transactions;
 
 namespace IntermediateLibrary
 {
@@ -16,15 +15,14 @@ namespace IntermediateLibrary
         DataAccess adminDataAccess;
         List<SqlParameter> sqlParameters;
         List<ParameterList> parameters;
-        DataTable table;
 
         public int AddClass(ClassObject _class)
         {
             try
             {
-                string insQuery = $"INSERT INTO [dbo].[class_tbl] (className, courseId, instructorId) VALUES (@ClassName, @CourseId, @InstructorId);";
+                string insQuery = $"INSERT INTO [dbo].[class_tbl] (className, courseId, instructorId, maxStudent) VALUES (@ClassName, @CourseId, @InstructorId, @MaxStudent);";
 
-                SqlParameter param1, param2, param3;
+                SqlParameter param1, param2, param3, param4;
 
                 param1 = new SqlParameter("@ClassName", SqlDbType.NVarChar, 50, "className");
                 param1.Value = _class.ClassName;
@@ -35,9 +33,13 @@ namespace IntermediateLibrary
                 param3 = new SqlParameter("InstructorId", SqlDbType.NVarChar, 10, "instructorId");
                 param3.Value = _class.Instructor.UserId;
 
+                param4 = new SqlParameter("@MaxStudent", SqlDbType.Int, int.MaxValue, "maxStudent");
+                param4.Value = _class.MaxStudent;
+
                 sqlParameters.Add(param1);
                 sqlParameters.Add(param2);
                 sqlParameters.Add(param3);
+                sqlParameters.Add(param4);
 
                 sqlParameters = new List<SqlParameter>(3);
                 adminDataAccess = new DataAccess();
@@ -305,9 +307,9 @@ namespace IntermediateLibrary
         {
             try
             {
-                string updQuery = "$UPDATE [dbo].[class_tbl] SET className = @ClassName, courseId = @CourseId, instructorId = @InstructorId where classId = @ClassId";
+                string updQuery = "$UPDATE [dbo].[class_tbl] SET className = @ClassName, courseId = @CourseId, instructorId = @InstructorId, maxStudent = @MaxStudent where classId = @ClassId";
 
-                SqlParameter param1, param2, param3, param4;
+                SqlParameter param1, param2, param3, param4, param5;
 
                 param1 = new SqlParameter("@ClassName", SqlDbType.NVarChar, 50, "className");
                 param1.Value = _class.ClassId;
@@ -321,7 +323,10 @@ namespace IntermediateLibrary
                 param4 = new SqlParameter("@ClassId", SqlDbType.Int, int.MaxValue, "classId");
                 param4.Value = _class.ClassId;
 
-                if(param4.Value == null) { throw new NullReferenceException(); }
+                param5 = new SqlParameter("@MaxStudent", SqlDbType.Int, int.MaxValue, "maxStudent");
+                param5.Value = _class.MaxStudent;
+
+                if (param4.Value == null) { throw new NullReferenceException(); }
                 else
                 {
                     sqlParameters = new List<SqlParameter>();
@@ -487,7 +492,7 @@ namespace IntermediateLibrary
         {
             try
             {
-                string sqlSelect = $"SELECT cl.classId, cl.className, cl.courseId, cl.InstructorId, co.courseName,  us.fName from(class_tbl cl join course_tbl co on cl.courseId = co.courseId) join user_tbl us on cl.instructorId = us.userId where cl.classId = @ClassId ";
+                string sqlSelect = $"SELECT cl.classId, cl.className, cl.courseId, cl.InstructorId, cl.maxStudent, co.courseName,  us.fName from(class_tbl cl join course_tbl co on cl.courseId = co.courseId) join user_tbl us on cl.instructorId = us.userId where cl.classId = @ClassId ";
 
                 adminDataAccess = new DataAccess();
                 ClassObject classObj = new ClassObject();
@@ -503,6 +508,7 @@ namespace IntermediateLibrary
                 classObj.Course.CourseName = task.Result.Columns["courseName"].ToString();
                 classObj.Instructor.UserId = task.Result.Columns["userId"].ToString();
                 classObj.Instructor.FirstName = task.Result.Columns["fName"].ToString();
+                classObj.MaxStudent = Convert.ToInt32(task.Result.Columns["maxStudent"]);
 
                 if(classObj == null) { throw new NullReferenceException(); }
                 else

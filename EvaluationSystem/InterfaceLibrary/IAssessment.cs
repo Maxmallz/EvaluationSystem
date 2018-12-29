@@ -9,7 +9,6 @@ namespace InterfaceLibrary
 {
     public interface IAssessment
     {
-        int MakeAssessment(AssessmentObject assessment);
         AssessmentObject ViewAssessment(int assessmentId);
     }
 }

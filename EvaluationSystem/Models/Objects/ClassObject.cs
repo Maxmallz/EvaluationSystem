@@ -12,6 +12,7 @@ namespace Models.Objects
         private InstructorObject _instructor;
         private CourseObject _course;
         private string _className;
+        private int _maxStudent;
 
         public ClassObject()
         {
@@ -22,5 +23,6 @@ namespace Models.Objects
         public string ClassName { get => _className; set => _className = value; }
         public CourseObject Course { get => _course; set => _course = value; }
         public InstructorObject Instructor { get => _instructor; set => _instructor = value; }
+        public int MaxStudent { get => _maxStudent; set => _maxStudent = value; }
     }
 }

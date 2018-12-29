@@ -44,7 +44,6 @@
     <Compile Include="Objects\AssessmentObject.cs" />
     <Compile Include="Objects\CourseObject.cs" />
     <Compile Include="Objects\CriterionObject.cs" />
-    <Compile Include="Objects\FeedbackObject.cs" />
     <Compile Include="Objects\InstructorObject.cs" />
     <Compile Include="Objects\ReportObject.cs" />
     <Compile Include="Objects\RubricObject.cs" />

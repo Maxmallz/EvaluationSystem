@@ -10,7 +10,7 @@ namespace InterfaceLibrary
     public interface ITeam
     {
         int AddTeam(TeamObject team);
-        int DeleteTeam(TeamObject team);
+        int DeleteTeam(int teamId);
         int UpdateTeam(TeamObject team);
         TeamObject ViewTeam(int teamId);
     }

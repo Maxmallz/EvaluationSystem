@@ -20,7 +20,7 @@ namespace Models.Objects
             this._Class = new ClassObject();
             this.CreatedBy = new InstructorObject();
         }
-        public int TeamId { get => _teamId;}
+        public int TeamId { get => _teamId; set => this._teamId = value; }
         public string TeamName { get => _teamName; set => _teamName = value; }
         public ClassObject _Class { get => _class; set => _class = value; }
         public int MinMember { get => _minMember; set => _minMember = value; }
