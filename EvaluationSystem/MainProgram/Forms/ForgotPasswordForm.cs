@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MainProgram.Forms.Admin
+namespace MainProgram.Forms
 {
-    public partial class ManageRubric : Form
+    public partial class ForgotPasswordForm : Form
     {
-        public ManageRubric()
+        public ForgotPasswordForm()
         {
             InitializeComponent();
         }

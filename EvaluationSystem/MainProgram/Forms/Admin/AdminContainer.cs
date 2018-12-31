@@ -16,5 +16,21 @@ namespace MainProgram.Forms.Admin
         {
             InitializeComponent();
         }
+
+        private void courseTabPage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminContainer_Load(object sender, EventArgs e)
+        {
+            userFullNameLabel.Text = "Signed in as First Name";
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

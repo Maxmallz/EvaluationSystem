@@ -85,7 +85,6 @@ namespace IntermediateLibrary
         {
             throw new NotImplementedException();
         }
-
         public ReportObject ViewTeamReport(TeamObject teamId)
         {
             throw new NotImplementedException();

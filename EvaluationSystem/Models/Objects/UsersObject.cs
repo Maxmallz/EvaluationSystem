@@ -9,7 +9,7 @@ using Models.Objects;
 
 namespace Models.Objects
 {
-    public class UserObject
+    public abstract class UserObject
     {
         public enum UserRole { Admin, Instructor, Student}
         public UserObject()

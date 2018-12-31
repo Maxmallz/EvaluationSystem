@@ -11,7 +11,7 @@ namespace Models.Objects
         const UserRole _studentRole = UserRole.Student;
         public StudentObject()
         {
-            base.userRole = _studentRole;
+            userRole = _studentRole;
         }
         public List<ClassObject> _Class { get; set; }
         public List<TeamObject> Team { get; set; }

@@ -46,34 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Admin\ManageClass.cs">
+    <Compile Include="Forms\ForgotPasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Admin\ManageClass.Designer.cs">
-      <DependentUpon>ManageClass.cs</DependentUpon>
+    <Compile Include="Forms\ForgotPasswordForm.Designer.cs">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Admin\ManageInstructor.cs">
+    <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Admin\ManageInstructor.Designer.cs">
-      <DependentUpon>ManageInstructor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Admin\ManageRubric.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Admin\ManageRubric.Designer.cs">
-      <DependentUpon>ManageRubric.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Admin\ManageStudent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Admin\ManageStudent.Designer.cs">
-      <DependentUpon>ManageStudent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Admin\AdminContainer.cs">
@@ -115,6 +97,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidationClass.cs" />
+    <EmbeddedResource Include="Forms\Admin\AdminContainer.resx">
+      <DependentUpon>AdminContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ForgotPasswordForm.resx">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Instructor\InstructorContainer.resx">
+      <DependentUpon>InstructorContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
