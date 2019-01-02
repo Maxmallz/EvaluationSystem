@@ -16,5 +16,15 @@ namespace MainProgram.Forms.Instructor
         {
             InitializeComponent();
         }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox5_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

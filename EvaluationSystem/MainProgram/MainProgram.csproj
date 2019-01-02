@@ -70,18 +70,6 @@
     <Compile Include="Forms\Instructor\InstructorContainer.Designer.cs">
       <DependentUpon>InstructorContainer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Instructor\ManageFeedback.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Instructor\ManageFeedback.Designer.cs">
-      <DependentUpon>ManageFeedback.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Instructor\ManageTeam.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Instructor\ManageTeam.Designer.cs">
-      <DependentUpon>ManageTeam.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Student\ManageAssessment.cs">
       <SubType>Form</SubType>
     </Compile>

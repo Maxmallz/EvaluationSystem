@@ -31,48 +31,34 @@
             this.components = new System.ComponentModel.Container();
             this.admintabControl = new System.Windows.Forms.TabControl();
             this.instructortabPage = new System.Windows.Forms.TabPage();
-            this.studentTabPage = new System.Windows.Forms.TabPage();
-            this.classTabPage = new System.Windows.Forms.TabPage();
-            this.rubricTabPage = new System.Windows.Forms.TabPage();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.courseTabPage = new System.Windows.Forms.TabPage();
-            this.iAddBtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.IuserIdTxtBox = new System.Windows.Forms.TextBox();
-            this.IuserIdComboBox = new System.Windows.Forms.ComboBox();
-            this.instructorDataGridView = new System.Windows.Forms.DataGridView();
-            this.iPasswordTxtBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.iLastNameTxtBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.iFirstNameTxtBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.iPhoneTxtBox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.iEmailTxtBox = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.IclearBtn = new System.Windows.Forms.Button();
-            this.iUpdateBtn = new System.Windows.Forms.Button();
-            this.InstructorDetailsgroupBox = new System.Windows.Forms.GroupBox();
+            this.IupdateTableBtn = new System.Windows.Forms.Button();
+            this.viewInstructorGroupBox = new System.Windows.Forms.GroupBox();
             this.iPhoneViewTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.iEmailViewTextBox = new System.Windows.Forms.TextBox();
+            this.IuserIdComboBox = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.iLastNameViewTextBox = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.iFirstNameViewtextBox = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.iPasswordViewtextBox = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.viewInstructorGroupBox = new System.Windows.Forms.GroupBox();
-            this.IupdateTableBtn = new System.Windows.Forms.Button();
-            this.userFullNameLabel = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.InstructorDetailsgroupBox = new System.Windows.Forms.GroupBox();
+            this.iUpdateBtn = new System.Windows.Forms.Button();
+            this.IclearBtn = new System.Windows.Forms.Button();
+            this.iPhoneTxtBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.iFirstNameTxtBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.iPasswordTxtBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.IuserIdTxtBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.iAddBtn = new System.Windows.Forms.Button();
+            this.instructorDataGridView = new System.Windows.Forms.DataGridView();
+            this.studentTabPage = new System.Windows.Forms.TabPage();
             this.sUpdateTableButton = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.sPhoneViewTextBox = new System.Windows.Forms.TextBox();
@@ -104,8 +90,10 @@
             this.label24 = new System.Windows.Forms.Label();
             this.sAddButton = new System.Windows.Forms.Button();
             this.studentDataGridView = new System.Windows.Forms.DataGridView();
+            this.classTabPage = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.classViewComboBox = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.courseViewComboBox = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
@@ -114,6 +102,8 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.classGroupBox = new System.Windows.Forms.GroupBox();
+            this.courseComboBox = new System.Windows.Forms.ComboBox();
+            this.maxStudentNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.updateButton = new System.Windows.Forms.Button();
             this.clearButton = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
@@ -126,11 +116,13 @@
             this.label36 = new System.Windows.Forms.Label();
             this.addButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.maxStudentNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.courseComboBox = new System.Windows.Forms.ComboBox();
-            this.classViewComboBox = new System.Windows.Forms.ComboBox();
+            this.rubricTabPage = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cMinCriteriaTextBox = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.cRubricComboBox = new System.Windows.Forms.ComboBox();
+            this.cClassViewcomboBox = new System.Windows.Forms.ComboBox();
             this.cAverageGradeTextBox = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.cMaxGradeTextBox = new System.Windows.Forms.TextBox();
@@ -142,6 +134,12 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.rubricGroupBox = new System.Windows.Forms.GroupBox();
+            this.classComboBox = new System.Windows.Forms.ComboBox();
+            this.averageGradeNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.maxCriteriaNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.maxGradeNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.minGradeNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.label46 = new System.Windows.Forms.Label();
             this.cupdateBtn = new System.Windows.Forms.Button();
             this.cClearBtn = new System.Windows.Forms.Button();
             this.label40 = new System.Windows.Forms.Label();
@@ -154,17 +152,7 @@
             this.label45 = new System.Windows.Forms.Label();
             this.cAddBtn = new System.Windows.Forms.Button();
             this.rubricDataGridView = new System.Windows.Forms.DataGridView();
-            this.label46 = new System.Windows.Forms.Label();
-            this.cClassViewcomboBox = new System.Windows.Forms.ComboBox();
-            this.cRubricComboBox = new System.Windows.Forms.ComboBox();
-            this.cMinCriteriaTextBox = new System.Windows.Forms.TextBox();
-            this.label47 = new System.Windows.Forms.Label();
-            this.minGradeNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.maxGradeNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.maxCriteriaNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.averageGradeNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.classComboBox = new System.Windows.Forms.ComboBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.courseTabPage = new System.Windows.Forms.TabPage();
             this.coUpdateTableBtn = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.coUpdateBtn = new System.Windows.Forms.Button();
@@ -175,34 +163,46 @@
             this.label61 = new System.Windows.Forms.Label();
             this.coAddBtn = new System.Windows.Forms.Button();
             this.courseDataGridView = new System.Windows.Forms.DataGridView();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.userFullNameLabel = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.iFirstNameViewtextBox = new System.Windows.Forms.TextBox();
+            this.iPasswordViewtextBox = new System.Windows.Forms.TextBox();
+            this.iEmailTxtBox = new System.Windows.Forms.TextBox();
+            this.iLastNameTxtBox = new System.Windows.Forms.TextBox();
             this.admintabControl.SuspendLayout();
             this.instructortabPage.SuspendLayout();
-            this.studentTabPage.SuspendLayout();
-            this.classTabPage.SuspendLayout();
-            this.rubricTabPage.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            this.courseTabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.instructorDataGridView)).BeginInit();
-            this.InstructorDetailsgroupBox.SuspendLayout();
             this.viewInstructorGroupBox.SuspendLayout();
+            this.InstructorDetailsgroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.instructorDataGridView)).BeginInit();
+            this.studentTabPage.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentDataGridView)).BeginInit();
+            this.classTabPage.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.classGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxStudentNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.rubricTabPage.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.rubricGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rubricDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minGradeNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maxGradeNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maxCriteriaNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.averageGradeNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxCriteriaNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxGradeNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minGradeNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rubricDataGridView)).BeginInit();
+            this.courseTabPage.SuspendLayout();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.courseDataGridView)).BeginInit();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // admintabControl
@@ -235,274 +235,35 @@
             this.instructortabPage.Text = "Instructor";
             this.instructortabPage.UseVisualStyleBackColor = true;
             // 
-            // studentTabPage
+            // IupdateTableBtn
             // 
-            this.studentTabPage.Controls.Add(this.sUpdateTableButton);
-            this.studentTabPage.Controls.Add(this.groupBox3);
-            this.studentTabPage.Controls.Add(this.groupBox4);
-            this.studentTabPage.Controls.Add(this.studentDataGridView);
-            this.studentTabPage.Location = new System.Drawing.Point(4, 27);
-            this.studentTabPage.Name = "studentTabPage";
-            this.studentTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.studentTabPage.Size = new System.Drawing.Size(1291, 548);
-            this.studentTabPage.TabIndex = 1;
-            this.studentTabPage.Text = "Student";
-            this.studentTabPage.UseVisualStyleBackColor = true;
+            this.IupdateTableBtn.Location = new System.Drawing.Point(758, 509);
+            this.IupdateTableBtn.Name = "IupdateTableBtn";
+            this.IupdateTableBtn.Size = new System.Drawing.Size(132, 24);
+            this.IupdateTableBtn.TabIndex = 17;
+            this.IupdateTableBtn.Text = "Update Table";
+            this.IupdateTableBtn.UseVisualStyleBackColor = true;
             // 
-            // classTabPage
+            // viewInstructorGroupBox
             // 
-            this.classTabPage.Controls.Add(this.button1);
-            this.classTabPage.Controls.Add(this.groupBox1);
-            this.classTabPage.Controls.Add(this.classGroupBox);
-            this.classTabPage.Controls.Add(this.dataGridView1);
-            this.classTabPage.Location = new System.Drawing.Point(4, 27);
-            this.classTabPage.Name = "classTabPage";
-            this.classTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.classTabPage.Size = new System.Drawing.Size(1291, 548);
-            this.classTabPage.TabIndex = 2;
-            this.classTabPage.Text = "Class";
-            this.classTabPage.UseVisualStyleBackColor = true;
-            // 
-            // rubricTabPage
-            // 
-            this.rubricTabPage.Controls.Add(this.button2);
-            this.rubricTabPage.Controls.Add(this.groupBox2);
-            this.rubricTabPage.Controls.Add(this.rubricGroupBox);
-            this.rubricTabPage.Controls.Add(this.rubricDataGridView);
-            this.rubricTabPage.Location = new System.Drawing.Point(4, 27);
-            this.rubricTabPage.Name = "rubricTabPage";
-            this.rubricTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.rubricTabPage.Size = new System.Drawing.Size(1291, 548);
-            this.rubricTabPage.TabIndex = 3;
-            this.rubricTabPage.Text = "Rubric";
-            this.rubricTabPage.UseVisualStyleBackColor = true;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1299, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exitToolStripMenuItem,
-            this.logoutToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "&File";
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "&Edit";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "&Help";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aboutToolStripMenuItem.Text = "&About";
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "&Exit";
-            // 
-            // courseTabPage
-            // 
-            this.courseTabPage.Controls.Add(this.coUpdateTableBtn);
-            this.courseTabPage.Controls.Add(this.groupBox6);
-            this.courseTabPage.Controls.Add(this.courseDataGridView);
-            this.courseTabPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.courseTabPage.Location = new System.Drawing.Point(4, 27);
-            this.courseTabPage.Name = "courseTabPage";
-            this.courseTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.courseTabPage.Size = new System.Drawing.Size(1291, 548);
-            this.courseTabPage.TabIndex = 4;
-            this.courseTabPage.Text = "Course";
-            this.courseTabPage.UseVisualStyleBackColor = true;
-            this.courseTabPage.Click += new System.EventHandler(this.courseTabPage_Click);
-            // 
-            // iAddBtn
-            // 
-            this.iAddBtn.Location = new System.Drawing.Point(718, 138);
-            this.iAddBtn.Name = "iAddBtn";
-            this.iAddBtn.Size = new System.Drawing.Size(63, 26);
-            this.iAddBtn.TabIndex = 0;
-            this.iAddBtn.Text = "Add";
-            this.iAddBtn.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "ID";
-            // 
-            // IuserIdTxtBox
-            // 
-            this.IuserIdTxtBox.Location = new System.Drawing.Point(114, 40);
-            this.IuserIdTxtBox.Name = "IuserIdTxtBox";
-            this.IuserIdTxtBox.Size = new System.Drawing.Size(156, 21);
-            this.IuserIdTxtBox.TabIndex = 2;
-            this.IuserIdTxtBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // IuserIdComboBox
-            // 
-            this.IuserIdComboBox.FormattingEnabled = true;
-            this.IuserIdComboBox.Location = new System.Drawing.Point(123, 31);
-            this.IuserIdComboBox.Name = "IuserIdComboBox";
-            this.IuserIdComboBox.Size = new System.Drawing.Size(169, 23);
-            this.IuserIdComboBox.TabIndex = 3;
-            // 
-            // instructorDataGridView
-            // 
-            this.instructorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.instructorDataGridView.Location = new System.Drawing.Point(40, 245);
-            this.instructorDataGridView.Name = "instructorDataGridView";
-            this.instructorDataGridView.Size = new System.Drawing.Size(850, 252);
-            this.instructorDataGridView.TabIndex = 4;
-            // 
-            // iPasswordTxtBox
-            // 
-            this.iPasswordTxtBox.Location = new System.Drawing.Point(114, 86);
-            this.iPasswordTxtBox.Name = "iPasswordTxtBox";
-            this.iPasswordTxtBox.Size = new System.Drawing.Size(156, 21);
-            this.iPasswordTxtBox.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 89);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 15);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Password";
-            // 
-            // iLastNameTxtBox
-            // 
-            this.iLastNameTxtBox.Location = new System.Drawing.Point(379, 86);
-            this.iLastNameTxtBox.Name = "iLastNameTxtBox";
-            this.iLastNameTxtBox.Size = new System.Drawing.Size(147, 21);
-            this.iLastNameTxtBox.TabIndex = 10;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(306, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 15);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Last Name";
-            // 
-            // iFirstNameTxtBox
-            // 
-            this.iFirstNameTxtBox.Location = new System.Drawing.Point(379, 40);
-            this.iFirstNameTxtBox.Name = "iFirstNameTxtBox";
-            this.iFirstNameTxtBox.Size = new System.Drawing.Size(147, 21);
-            this.iFirstNameTxtBox.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(306, 40);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 15);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "First Name";
-            // 
-            // iPhoneTxtBox
-            // 
-            this.iPhoneTxtBox.Location = new System.Drawing.Point(612, 86);
-            this.iPhoneTxtBox.Name = "iPhoneTxtBox";
-            this.iPhoneTxtBox.Size = new System.Drawing.Size(169, 21);
-            this.iPhoneTxtBox.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(548, 89);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 15);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Phone";
-            // 
-            // iEmailTxtBox
-            // 
-            this.iEmailTxtBox.Location = new System.Drawing.Point(612, 40);
-            this.iEmailTxtBox.Name = "iEmailTxtBox";
-            this.iEmailTxtBox.Size = new System.Drawing.Size(169, 21);
-            this.iEmailTxtBox.TabIndex = 12;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(548, 40);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 15);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Email";
-            // 
-            // IclearBtn
-            // 
-            this.IclearBtn.Location = new System.Drawing.Point(612, 138);
-            this.IclearBtn.Name = "IclearBtn";
-            this.IclearBtn.Size = new System.Drawing.Size(67, 26);
-            this.IclearBtn.TabIndex = 15;
-            this.IclearBtn.Text = "Clear";
-            this.IclearBtn.UseVisualStyleBackColor = true;
-            // 
-            // iUpdateBtn
-            // 
-            this.iUpdateBtn.Location = new System.Drawing.Point(718, 138);
-            this.iUpdateBtn.Name = "iUpdateBtn";
-            this.iUpdateBtn.Size = new System.Drawing.Size(63, 26);
-            this.iUpdateBtn.TabIndex = 16;
-            this.iUpdateBtn.Text = "Update";
-            this.iUpdateBtn.UseVisualStyleBackColor = true;
-            this.iUpdateBtn.Visible = false;
-            // 
-            // InstructorDetailsgroupBox
-            // 
-            this.InstructorDetailsgroupBox.Controls.Add(this.iUpdateBtn);
-            this.InstructorDetailsgroupBox.Controls.Add(this.IclearBtn);
-            this.InstructorDetailsgroupBox.Controls.Add(this.iPhoneTxtBox);
-            this.InstructorDetailsgroupBox.Controls.Add(this.label5);
-            this.InstructorDetailsgroupBox.Controls.Add(this.iEmailTxtBox);
-            this.InstructorDetailsgroupBox.Controls.Add(this.label6);
-            this.InstructorDetailsgroupBox.Controls.Add(this.iLastNameTxtBox);
-            this.InstructorDetailsgroupBox.Controls.Add(this.label3);
-            this.InstructorDetailsgroupBox.Controls.Add(this.iFirstNameTxtBox);
-            this.InstructorDetailsgroupBox.Controls.Add(this.label4);
-            this.InstructorDetailsgroupBox.Controls.Add(this.iPasswordTxtBox);
-            this.InstructorDetailsgroupBox.Controls.Add(this.label2);
-            this.InstructorDetailsgroupBox.Controls.Add(this.IuserIdTxtBox);
-            this.InstructorDetailsgroupBox.Controls.Add(this.label1);
-            this.InstructorDetailsgroupBox.Controls.Add(this.iAddBtn);
-            this.InstructorDetailsgroupBox.Location = new System.Drawing.Point(40, 44);
-            this.InstructorDetailsgroupBox.Name = "InstructorDetailsgroupBox";
-            this.InstructorDetailsgroupBox.Size = new System.Drawing.Size(850, 180);
-            this.InstructorDetailsgroupBox.TabIndex = 17;
-            this.InstructorDetailsgroupBox.TabStop = false;
-            this.InstructorDetailsgroupBox.Text = "Instructor Details";
+            this.viewInstructorGroupBox.Controls.Add(this.iPhoneViewTextBox);
+            this.viewInstructorGroupBox.Controls.Add(this.label7);
+            this.viewInstructorGroupBox.Controls.Add(this.iEmailViewTextBox);
+            this.viewInstructorGroupBox.Controls.Add(this.IuserIdComboBox);
+            this.viewInstructorGroupBox.Controls.Add(this.label8);
+            this.viewInstructorGroupBox.Controls.Add(this.iLastNameViewTextBox);
+            this.viewInstructorGroupBox.Controls.Add(this.label12);
+            this.viewInstructorGroupBox.Controls.Add(this.label9);
+            this.viewInstructorGroupBox.Controls.Add(this.iFirstNameViewtextBox);
+            this.viewInstructorGroupBox.Controls.Add(this.label11);
+            this.viewInstructorGroupBox.Controls.Add(this.label10);
+            this.viewInstructorGroupBox.Controls.Add(this.iPasswordViewtextBox);
+            this.viewInstructorGroupBox.Location = new System.Drawing.Point(920, 32);
+            this.viewInstructorGroupBox.Name = "viewInstructorGroupBox";
+            this.viewInstructorGroupBox.Size = new System.Drawing.Size(322, 306);
+            this.viewInstructorGroupBox.TabIndex = 29;
+            this.viewInstructorGroupBox.TabStop = false;
+            this.viewInstructorGroupBox.Text = "View Instructor";
             // 
             // iPhoneViewTextBox
             // 
@@ -529,6 +290,14 @@
             this.iEmailViewTextBox.Size = new System.Drawing.Size(169, 21);
             this.iEmailViewTextBox.TabIndex = 26;
             // 
+            // IuserIdComboBox
+            // 
+            this.IuserIdComboBox.FormattingEnabled = true;
+            this.IuserIdComboBox.Location = new System.Drawing.Point(123, 31);
+            this.IuserIdComboBox.Name = "IuserIdComboBox";
+            this.IuserIdComboBox.Size = new System.Drawing.Size(169, 23);
+            this.IuserIdComboBox.TabIndex = 3;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -546,6 +315,15 @@
             this.iLastNameViewTextBox.Size = new System.Drawing.Size(169, 21);
             this.iLastNameViewTextBox.TabIndex = 24;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(28, 34);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(48, 15);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "User ID";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -554,31 +332,6 @@
             this.label9.Size = new System.Drawing.Size(67, 15);
             this.label9.TabIndex = 23;
             this.label9.Text = "Last Name";
-            // 
-            // iFirstNameViewtextBox
-            // 
-            this.iFirstNameViewtextBox.Location = new System.Drawing.Point(123, 118);
-            this.iFirstNameViewtextBox.Name = "iFirstNameViewtextBox";
-            this.iFirstNameViewtextBox.ReadOnly = true;
-            this.iFirstNameViewtextBox.Size = new System.Drawing.Size(169, 21);
-            this.iFirstNameViewtextBox.TabIndex = 22;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(28, 118);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(67, 15);
-            this.label10.TabIndex = 21;
-            this.label10.Text = "First Name";
-            // 
-            // iPasswordViewtextBox
-            // 
-            this.iPasswordViewtextBox.Location = new System.Drawing.Point(123, 76);
-            this.iPasswordViewtextBox.Name = "iPasswordViewtextBox";
-            this.iPasswordViewtextBox.ReadOnly = true;
-            this.iPasswordViewtextBox.Size = new System.Drawing.Size(169, 21);
-            this.iPasswordViewtextBox.TabIndex = 20;
             // 
             // label11
             // 
@@ -589,52 +342,171 @@
             this.label11.TabIndex = 19;
             this.label11.Text = "Password";
             // 
-            // label12
+            // label10
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(28, 34);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(48, 15);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "User ID";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(28, 118);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(67, 15);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "First Name";
             // 
-            // viewInstructorGroupBox
+            // InstructorDetailsgroupBox
             // 
-            this.viewInstructorGroupBox.Controls.Add(this.iPhoneViewTextBox);
-            this.viewInstructorGroupBox.Controls.Add(this.label7);
-            this.viewInstructorGroupBox.Controls.Add(this.iEmailViewTextBox);
-            this.viewInstructorGroupBox.Controls.Add(this.IuserIdComboBox);
-            this.viewInstructorGroupBox.Controls.Add(this.label8);
-            this.viewInstructorGroupBox.Controls.Add(this.iLastNameViewTextBox);
-            this.viewInstructorGroupBox.Controls.Add(this.label12);
-            this.viewInstructorGroupBox.Controls.Add(this.label9);
-            this.viewInstructorGroupBox.Controls.Add(this.iFirstNameViewtextBox);
-            this.viewInstructorGroupBox.Controls.Add(this.label11);
-            this.viewInstructorGroupBox.Controls.Add(this.label10);
-            this.viewInstructorGroupBox.Controls.Add(this.iPasswordViewtextBox);
-            this.viewInstructorGroupBox.Location = new System.Drawing.Point(920, 32);
-            this.viewInstructorGroupBox.Name = "viewInstructorGroupBox";
-            this.viewInstructorGroupBox.Size = new System.Drawing.Size(322, 306);
-            this.viewInstructorGroupBox.TabIndex = 29;
-            this.viewInstructorGroupBox.TabStop = false;
-            this.viewInstructorGroupBox.Text = "View Instructor";
+            this.InstructorDetailsgroupBox.Controls.Add(this.iUpdateBtn);
+            this.InstructorDetailsgroupBox.Controls.Add(this.IclearBtn);
+            this.InstructorDetailsgroupBox.Controls.Add(this.iPhoneTxtBox);
+            this.InstructorDetailsgroupBox.Controls.Add(this.label5);
+            this.InstructorDetailsgroupBox.Controls.Add(this.iEmailTxtBox);
+            this.InstructorDetailsgroupBox.Controls.Add(this.label6);
+            this.InstructorDetailsgroupBox.Controls.Add(this.iLastNameTxtBox);
+            this.InstructorDetailsgroupBox.Controls.Add(this.label3);
+            this.InstructorDetailsgroupBox.Controls.Add(this.iFirstNameTxtBox);
+            this.InstructorDetailsgroupBox.Controls.Add(this.label4);
+            this.InstructorDetailsgroupBox.Controls.Add(this.iPasswordTxtBox);
+            this.InstructorDetailsgroupBox.Controls.Add(this.label2);
+            this.InstructorDetailsgroupBox.Controls.Add(this.IuserIdTxtBox);
+            this.InstructorDetailsgroupBox.Controls.Add(this.label1);
+            this.InstructorDetailsgroupBox.Controls.Add(this.iAddBtn);
+            this.InstructorDetailsgroupBox.Location = new System.Drawing.Point(40, 44);
+            this.InstructorDetailsgroupBox.Name = "InstructorDetailsgroupBox";
+            this.InstructorDetailsgroupBox.Size = new System.Drawing.Size(850, 180);
+            this.InstructorDetailsgroupBox.TabIndex = 17;
+            this.InstructorDetailsgroupBox.TabStop = false;
+            this.InstructorDetailsgroupBox.Text = "Instructor Details";
             // 
-            // IupdateTableBtn
+            // iUpdateBtn
             // 
-            this.IupdateTableBtn.Location = new System.Drawing.Point(758, 509);
-            this.IupdateTableBtn.Name = "IupdateTableBtn";
-            this.IupdateTableBtn.Size = new System.Drawing.Size(132, 24);
-            this.IupdateTableBtn.TabIndex = 17;
-            this.IupdateTableBtn.Text = "Update Table";
-            this.IupdateTableBtn.UseVisualStyleBackColor = true;
+            this.iUpdateBtn.Location = new System.Drawing.Point(718, 138);
+            this.iUpdateBtn.Name = "iUpdateBtn";
+            this.iUpdateBtn.Size = new System.Drawing.Size(63, 26);
+            this.iUpdateBtn.TabIndex = 16;
+            this.iUpdateBtn.Text = "Update";
+            this.iUpdateBtn.UseVisualStyleBackColor = true;
+            this.iUpdateBtn.Visible = false;
             // 
-            // userFullNameLabel
+            // IclearBtn
             // 
-            this.userFullNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userFullNameLabel.Location = new System.Drawing.Point(1071, 29);
-            this.userFullNameLabel.Name = "userFullNameLabel";
-            this.userFullNameLabel.Size = new System.Drawing.Size(178, 19);
-            this.userFullNameLabel.TabIndex = 31;
+            this.IclearBtn.Location = new System.Drawing.Point(612, 138);
+            this.IclearBtn.Name = "IclearBtn";
+            this.IclearBtn.Size = new System.Drawing.Size(67, 26);
+            this.IclearBtn.TabIndex = 15;
+            this.IclearBtn.Text = "Clear";
+            this.IclearBtn.UseVisualStyleBackColor = true;
+            // 
+            // iPhoneTxtBox
+            // 
+            this.iPhoneTxtBox.Location = new System.Drawing.Point(612, 86);
+            this.iPhoneTxtBox.Name = "iPhoneTxtBox";
+            this.iPhoneTxtBox.Size = new System.Drawing.Size(169, 21);
+            this.iPhoneTxtBox.TabIndex = 14;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(548, 89);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 15);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Phone";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(548, 40);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 15);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Email";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(306, 89);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 15);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Last Name";
+            // 
+            // iFirstNameTxtBox
+            // 
+            this.iFirstNameTxtBox.Location = new System.Drawing.Point(379, 40);
+            this.iFirstNameTxtBox.Name = "iFirstNameTxtBox";
+            this.iFirstNameTxtBox.Size = new System.Drawing.Size(147, 21);
+            this.iFirstNameTxtBox.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(306, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 15);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "First Name";
+            // 
+            // iPasswordTxtBox
+            // 
+            this.iPasswordTxtBox.Location = new System.Drawing.Point(114, 86);
+            this.iPasswordTxtBox.Name = "iPasswordTxtBox";
+            this.iPasswordTxtBox.Size = new System.Drawing.Size(156, 21);
+            this.iPasswordTxtBox.TabIndex = 6;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(32, 89);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 15);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Password";
+            // 
+            // IuserIdTxtBox
+            // 
+            this.IuserIdTxtBox.Location = new System.Drawing.Point(114, 40);
+            this.IuserIdTxtBox.Name = "IuserIdTxtBox";
+            this.IuserIdTxtBox.Size = new System.Drawing.Size(156, 21);
+            this.IuserIdTxtBox.TabIndex = 2;
+            this.IuserIdTxtBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(19, 15);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "ID";
+            // 
+            // iAddBtn
+            // 
+            this.iAddBtn.Location = new System.Drawing.Point(718, 138);
+            this.iAddBtn.Name = "iAddBtn";
+            this.iAddBtn.Size = new System.Drawing.Size(63, 26);
+            this.iAddBtn.TabIndex = 0;
+            this.iAddBtn.Text = "Add";
+            this.iAddBtn.UseVisualStyleBackColor = true;
+            // 
+            // instructorDataGridView
+            // 
+            this.instructorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.instructorDataGridView.Location = new System.Drawing.Point(40, 245);
+            this.instructorDataGridView.Name = "instructorDataGridView";
+            this.instructorDataGridView.Size = new System.Drawing.Size(850, 252);
+            this.instructorDataGridView.TabIndex = 4;
+            // 
+            // studentTabPage
+            // 
+            this.studentTabPage.Controls.Add(this.sUpdateTableButton);
+            this.studentTabPage.Controls.Add(this.groupBox3);
+            this.studentTabPage.Controls.Add(this.groupBox4);
+            this.studentTabPage.Controls.Add(this.studentDataGridView);
+            this.studentTabPage.Location = new System.Drawing.Point(4, 27);
+            this.studentTabPage.Name = "studentTabPage";
+            this.studentTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.studentTabPage.Size = new System.Drawing.Size(1291, 548);
+            this.studentTabPage.TabIndex = 1;
+            this.studentTabPage.Text = "Student";
+            this.studentTabPage.UseVisualStyleBackColor = true;
             // 
             // sUpdateTableButton
             // 
@@ -924,6 +796,20 @@
             this.studentDataGridView.Size = new System.Drawing.Size(850, 252);
             this.studentDataGridView.TabIndex = 30;
             // 
+            // classTabPage
+            // 
+            this.classTabPage.Controls.Add(this.button1);
+            this.classTabPage.Controls.Add(this.groupBox1);
+            this.classTabPage.Controls.Add(this.classGroupBox);
+            this.classTabPage.Controls.Add(this.dataGridView1);
+            this.classTabPage.Location = new System.Drawing.Point(4, 27);
+            this.classTabPage.Name = "classTabPage";
+            this.classTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.classTabPage.Size = new System.Drawing.Size(1291, 548);
+            this.classTabPage.TabIndex = 2;
+            this.classTabPage.Text = "Class";
+            this.classTabPage.UseVisualStyleBackColor = true;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(762, 501);
@@ -949,6 +835,14 @@
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "View Class";
+            // 
+            // classViewComboBox
+            // 
+            this.classViewComboBox.FormattingEnabled = true;
+            this.classViewComboBox.Location = new System.Drawing.Point(123, 76);
+            this.classViewComboBox.Name = "classViewComboBox";
+            this.classViewComboBox.Size = new System.Drawing.Size(169, 23);
+            this.classViewComboBox.TabIndex = 29;
             // 
             // textBox2
             // 
@@ -1031,6 +925,21 @@
             this.classGroupBox.TabIndex = 36;
             this.classGroupBox.TabStop = false;
             this.classGroupBox.Text = "Class Details";
+            // 
+            // courseComboBox
+            // 
+            this.courseComboBox.FormattingEnabled = true;
+            this.courseComboBox.Location = new System.Drawing.Point(379, 40);
+            this.courseComboBox.Name = "courseComboBox";
+            this.courseComboBox.Size = new System.Drawing.Size(147, 23);
+            this.courseComboBox.TabIndex = 18;
+            // 
+            // maxStudentNumericUpDown
+            // 
+            this.maxStudentNumericUpDown.Location = new System.Drawing.Point(661, 40);
+            this.maxStudentNumericUpDown.Name = "maxStudentNumericUpDown";
+            this.maxStudentNumericUpDown.Size = new System.Drawing.Size(120, 21);
+            this.maxStudentNumericUpDown.TabIndex = 17;
             // 
             // updateButton
             // 
@@ -1135,28 +1044,19 @@
             this.dataGridView1.Size = new System.Drawing.Size(850, 252);
             this.dataGridView1.TabIndex = 34;
             // 
-            // maxStudentNumericUpDown
+            // rubricTabPage
             // 
-            this.maxStudentNumericUpDown.Location = new System.Drawing.Point(661, 40);
-            this.maxStudentNumericUpDown.Name = "maxStudentNumericUpDown";
-            this.maxStudentNumericUpDown.Size = new System.Drawing.Size(120, 21);
-            this.maxStudentNumericUpDown.TabIndex = 17;
-            // 
-            // courseComboBox
-            // 
-            this.courseComboBox.FormattingEnabled = true;
-            this.courseComboBox.Location = new System.Drawing.Point(379, 40);
-            this.courseComboBox.Name = "courseComboBox";
-            this.courseComboBox.Size = new System.Drawing.Size(147, 23);
-            this.courseComboBox.TabIndex = 18;
-            // 
-            // classViewComboBox
-            // 
-            this.classViewComboBox.FormattingEnabled = true;
-            this.classViewComboBox.Location = new System.Drawing.Point(123, 76);
-            this.classViewComboBox.Name = "classViewComboBox";
-            this.classViewComboBox.Size = new System.Drawing.Size(169, 23);
-            this.classViewComboBox.TabIndex = 29;
+            this.rubricTabPage.Controls.Add(this.button2);
+            this.rubricTabPage.Controls.Add(this.groupBox2);
+            this.rubricTabPage.Controls.Add(this.rubricGroupBox);
+            this.rubricTabPage.Controls.Add(this.rubricDataGridView);
+            this.rubricTabPage.Location = new System.Drawing.Point(4, 27);
+            this.rubricTabPage.Name = "rubricTabPage";
+            this.rubricTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.rubricTabPage.Size = new System.Drawing.Size(1291, 548);
+            this.rubricTabPage.TabIndex = 3;
+            this.rubricTabPage.Text = "Rubric";
+            this.rubricTabPage.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -1189,6 +1089,39 @@
             this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "View Rubric";
+            // 
+            // cMinCriteriaTextBox
+            // 
+            this.cMinCriteriaTextBox.Location = new System.Drawing.Point(123, 284);
+            this.cMinCriteriaTextBox.Name = "cMinCriteriaTextBox";
+            this.cMinCriteriaTextBox.ReadOnly = true;
+            this.cMinCriteriaTextBox.Size = new System.Drawing.Size(169, 21);
+            this.cMinCriteriaTextBox.TabIndex = 32;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(28, 284);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(73, 15);
+            this.label47.TabIndex = 31;
+            this.label47.Text = "Max Criteria";
+            // 
+            // cRubricComboBox
+            // 
+            this.cRubricComboBox.FormattingEnabled = true;
+            this.cRubricComboBox.Location = new System.Drawing.Point(123, 110);
+            this.cRubricComboBox.Name = "cRubricComboBox";
+            this.cRubricComboBox.Size = new System.Drawing.Size(169, 23);
+            this.cRubricComboBox.TabIndex = 30;
+            // 
+            // cClassViewcomboBox
+            // 
+            this.cClassViewcomboBox.FormattingEnabled = true;
+            this.cClassViewcomboBox.Location = new System.Drawing.Point(123, 73);
+            this.cClassViewcomboBox.Name = "cClassViewcomboBox";
+            this.cClassViewcomboBox.Size = new System.Drawing.Size(169, 23);
+            this.cClassViewcomboBox.TabIndex = 29;
             // 
             // cAverageGradeTextBox
             // 
@@ -1302,6 +1235,51 @@
             this.rubricGroupBox.TabStop = false;
             this.rubricGroupBox.Text = "Rubric Details";
             // 
+            // classComboBox
+            // 
+            this.classComboBox.FormattingEnabled = true;
+            this.classComboBox.Location = new System.Drawing.Point(681, 43);
+            this.classComboBox.Name = "classComboBox";
+            this.classComboBox.Size = new System.Drawing.Size(116, 23);
+            this.classComboBox.TabIndex = 33;
+            // 
+            // averageGradeNumericUpDown
+            // 
+            this.averageGradeNumericUpDown.Location = new System.Drawing.Point(533, 44);
+            this.averageGradeNumericUpDown.Name = "averageGradeNumericUpDown";
+            this.averageGradeNumericUpDown.Size = new System.Drawing.Size(58, 21);
+            this.averageGradeNumericUpDown.TabIndex = 22;
+            // 
+            // maxCriteriaNumericUpDown
+            // 
+            this.maxCriteriaNumericUpDown.Location = new System.Drawing.Point(533, 86);
+            this.maxCriteriaNumericUpDown.Name = "maxCriteriaNumericUpDown";
+            this.maxCriteriaNumericUpDown.Size = new System.Drawing.Size(58, 21);
+            this.maxCriteriaNumericUpDown.TabIndex = 21;
+            // 
+            // maxGradeNumericUpDown
+            // 
+            this.maxGradeNumericUpDown.Location = new System.Drawing.Point(354, 87);
+            this.maxGradeNumericUpDown.Name = "maxGradeNumericUpDown";
+            this.maxGradeNumericUpDown.Size = new System.Drawing.Size(58, 21);
+            this.maxGradeNumericUpDown.TabIndex = 20;
+            // 
+            // minGradeNumericUpDown
+            // 
+            this.minGradeNumericUpDown.Location = new System.Drawing.Point(354, 41);
+            this.minGradeNumericUpDown.Name = "minGradeNumericUpDown";
+            this.minGradeNumericUpDown.Size = new System.Drawing.Size(58, 21);
+            this.minGradeNumericUpDown.TabIndex = 19;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(631, 43);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(37, 15);
+            this.label46.TabIndex = 17;
+            this.label46.Text = "Class";
+            // 
             // cupdateBtn
             // 
             this.cupdateBtn.Location = new System.Drawing.Point(734, 137);
@@ -1407,87 +1385,20 @@
             this.rubricDataGridView.Size = new System.Drawing.Size(850, 252);
             this.rubricDataGridView.TabIndex = 30;
             // 
-            // label46
+            // courseTabPage
             // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(631, 43);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(37, 15);
-            this.label46.TabIndex = 17;
-            this.label46.Text = "Class";
-            // 
-            // cClassViewcomboBox
-            // 
-            this.cClassViewcomboBox.FormattingEnabled = true;
-            this.cClassViewcomboBox.Location = new System.Drawing.Point(123, 73);
-            this.cClassViewcomboBox.Name = "cClassViewcomboBox";
-            this.cClassViewcomboBox.Size = new System.Drawing.Size(169, 23);
-            this.cClassViewcomboBox.TabIndex = 29;
-            // 
-            // cRubricComboBox
-            // 
-            this.cRubricComboBox.FormattingEnabled = true;
-            this.cRubricComboBox.Location = new System.Drawing.Point(123, 110);
-            this.cRubricComboBox.Name = "cRubricComboBox";
-            this.cRubricComboBox.Size = new System.Drawing.Size(169, 23);
-            this.cRubricComboBox.TabIndex = 30;
-            // 
-            // cMinCriteriaTextBox
-            // 
-            this.cMinCriteriaTextBox.Location = new System.Drawing.Point(123, 284);
-            this.cMinCriteriaTextBox.Name = "cMinCriteriaTextBox";
-            this.cMinCriteriaTextBox.ReadOnly = true;
-            this.cMinCriteriaTextBox.Size = new System.Drawing.Size(169, 21);
-            this.cMinCriteriaTextBox.TabIndex = 32;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(28, 284);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(73, 15);
-            this.label47.TabIndex = 31;
-            this.label47.Text = "Max Criteria";
-            // 
-            // minGradeNumericUpDown
-            // 
-            this.minGradeNumericUpDown.Location = new System.Drawing.Point(354, 41);
-            this.minGradeNumericUpDown.Name = "minGradeNumericUpDown";
-            this.minGradeNumericUpDown.Size = new System.Drawing.Size(58, 21);
-            this.minGradeNumericUpDown.TabIndex = 19;
-            // 
-            // maxGradeNumericUpDown
-            // 
-            this.maxGradeNumericUpDown.Location = new System.Drawing.Point(354, 87);
-            this.maxGradeNumericUpDown.Name = "maxGradeNumericUpDown";
-            this.maxGradeNumericUpDown.Size = new System.Drawing.Size(58, 21);
-            this.maxGradeNumericUpDown.TabIndex = 20;
-            // 
-            // maxCriteriaNumericUpDown
-            // 
-            this.maxCriteriaNumericUpDown.Location = new System.Drawing.Point(533, 86);
-            this.maxCriteriaNumericUpDown.Name = "maxCriteriaNumericUpDown";
-            this.maxCriteriaNumericUpDown.Size = new System.Drawing.Size(58, 21);
-            this.maxCriteriaNumericUpDown.TabIndex = 21;
-            // 
-            // averageGradeNumericUpDown
-            // 
-            this.averageGradeNumericUpDown.Location = new System.Drawing.Point(533, 44);
-            this.averageGradeNumericUpDown.Name = "averageGradeNumericUpDown";
-            this.averageGradeNumericUpDown.Size = new System.Drawing.Size(58, 21);
-            this.averageGradeNumericUpDown.TabIndex = 22;
-            // 
-            // classComboBox
-            // 
-            this.classComboBox.FormattingEnabled = true;
-            this.classComboBox.Location = new System.Drawing.Point(681, 43);
-            this.classComboBox.Name = "classComboBox";
-            this.classComboBox.Size = new System.Drawing.Size(116, 23);
-            this.classComboBox.TabIndex = 33;
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
+            this.courseTabPage.Controls.Add(this.coUpdateTableBtn);
+            this.courseTabPage.Controls.Add(this.groupBox6);
+            this.courseTabPage.Controls.Add(this.courseDataGridView);
+            this.courseTabPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.courseTabPage.Location = new System.Drawing.Point(4, 27);
+            this.courseTabPage.Name = "courseTabPage";
+            this.courseTabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.courseTabPage.Size = new System.Drawing.Size(1291, 548);
+            this.courseTabPage.TabIndex = 4;
+            this.courseTabPage.Text = "Course";
+            this.courseTabPage.UseVisualStyleBackColor = true;
+            this.courseTabPage.Click += new System.EventHandler(this.courseTabPage_Click);
             // 
             // coUpdateTableBtn
             // 
@@ -1583,11 +1494,100 @@
             this.courseDataGridView.Size = new System.Drawing.Size(850, 252);
             this.courseDataGridView.TabIndex = 34;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.editToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1299, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem,
+            this.logoutToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "&File";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.exitToolStripMenuItem.Text = "&Exit";
+            // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.logoutToolStripMenuItem.Text = "&Logout";
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem.Text = "&Edit";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Text = "&About";
+            // 
+            // userFullNameLabel
+            // 
+            this.userFullNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userFullNameLabel.Location = new System.Drawing.Point(1071, 29);
+            this.userFullNameLabel.Name = "userFullNameLabel";
+            this.userFullNameLabel.Size = new System.Drawing.Size(178, 19);
+            this.userFullNameLabel.TabIndex = 31;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // iFirstNameViewtextBox
+            // 
+            this.iFirstNameViewtextBox.Location = new System.Drawing.Point(123, 118);
+            this.iFirstNameViewtextBox.Name = "iFirstNameViewtextBox";
+            this.iFirstNameViewtextBox.ReadOnly = true;
+            this.iFirstNameViewtextBox.Size = new System.Drawing.Size(169, 21);
+            this.iFirstNameViewtextBox.TabIndex = 22;
+            // 
+            // iPasswordViewtextBox
+            // 
+            this.iPasswordViewtextBox.Location = new System.Drawing.Point(123, 76);
+            this.iPasswordViewtextBox.Name = "iPasswordViewtextBox";
+            this.iPasswordViewtextBox.ReadOnly = true;
+            this.iPasswordViewtextBox.Size = new System.Drawing.Size(169, 21);
+            this.iPasswordViewtextBox.TabIndex = 20;
+            // 
+            // iEmailTxtBox
+            // 
+            this.iEmailTxtBox.Location = new System.Drawing.Point(612, 40);
+            this.iEmailTxtBox.Name = "iEmailTxtBox";
+            this.iEmailTxtBox.Size = new System.Drawing.Size(169, 21);
+            this.iEmailTxtBox.TabIndex = 12;
+            // 
+            // iLastNameTxtBox
+            // 
+            this.iLastNameTxtBox.Location = new System.Drawing.Point(379, 86);
+            this.iLastNameTxtBox.Name = "iLastNameTxtBox";
+            this.iLastNameTxtBox.Size = new System.Drawing.Size(147, 21);
+            this.iLastNameTxtBox.TabIndex = 10;
             // 
             // AdminContainer
             // 
@@ -1604,41 +1604,41 @@
             this.Load += new System.EventHandler(this.AdminContainer_Load);
             this.admintabControl.ResumeLayout(false);
             this.instructortabPage.ResumeLayout(false);
-            this.studentTabPage.ResumeLayout(false);
-            this.classTabPage.ResumeLayout(false);
-            this.rubricTabPage.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.courseTabPage.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.instructorDataGridView)).EndInit();
-            this.InstructorDetailsgroupBox.ResumeLayout(false);
-            this.InstructorDetailsgroupBox.PerformLayout();
             this.viewInstructorGroupBox.ResumeLayout(false);
             this.viewInstructorGroupBox.PerformLayout();
+            this.InstructorDetailsgroupBox.ResumeLayout(false);
+            this.InstructorDetailsgroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.instructorDataGridView)).EndInit();
+            this.studentTabPage.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studentDataGridView)).EndInit();
+            this.classTabPage.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.classGroupBox.ResumeLayout(false);
             this.classGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maxStudentNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.rubricTabPage.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.rubricGroupBox.ResumeLayout(false);
             this.rubricGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rubricDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minGradeNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maxGradeNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maxCriteriaNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.averageGradeNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxCriteriaNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maxGradeNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minGradeNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rubricDataGridView)).EndInit();
+            this.courseTabPage.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.courseDataGridView)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1665,9 +1665,7 @@
         private System.Windows.Forms.Button iAddBtn;
         private System.Windows.Forms.TextBox iPhoneTxtBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox iEmailTxtBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox iLastNameTxtBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox iFirstNameTxtBox;
         private System.Windows.Forms.Label label4;
@@ -1683,10 +1681,8 @@
         private System.Windows.Forms.TextBox iLastNameViewTextBox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox iFirstNameViewtextBox;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox iPasswordViewtextBox;
         private System.Windows.Forms.GroupBox viewInstructorGroupBox;
         private System.Windows.Forms.Button IupdateTableBtn;
         private System.Windows.Forms.Label userFullNameLabel;
@@ -1793,5 +1789,9 @@
         private System.Windows.Forms.Button coAddBtn;
         private System.Windows.Forms.DataGridView courseDataGridView;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private System.Windows.Forms.TextBox iFirstNameViewtextBox;
+        private System.Windows.Forms.TextBox iPasswordViewtextBox;
+        private System.Windows.Forms.TextBox iEmailTxtBox;
+        private System.Windows.Forms.TextBox iLastNameTxtBox;
     }
 }
