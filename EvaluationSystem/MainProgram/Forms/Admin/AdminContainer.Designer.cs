@@ -41,14 +41,18 @@
             this.iLastNameViewTextBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.iFirstNameViewtextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.iPasswordViewtextBox = new System.Windows.Forms.TextBox();
             this.InstructorDetailsgroupBox = new System.Windows.Forms.GroupBox();
             this.iUpdateBtn = new System.Windows.Forms.Button();
             this.IclearBtn = new System.Windows.Forms.Button();
             this.iPhoneTxtBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.iEmailTxtBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.iLastNameTxtBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.iFirstNameTxtBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -172,10 +176,6 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userFullNameLabel = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.iFirstNameViewtextBox = new System.Windows.Forms.TextBox();
-            this.iPasswordViewtextBox = new System.Windows.Forms.TextBox();
-            this.iEmailTxtBox = new System.Windows.Forms.TextBox();
-            this.iLastNameTxtBox = new System.Windows.Forms.TextBox();
             this.admintabControl.SuspendLayout();
             this.instructortabPage.SuspendLayout();
             this.viewInstructorGroupBox.SuspendLayout();
@@ -243,6 +243,7 @@
             this.IupdateTableBtn.TabIndex = 17;
             this.IupdateTableBtn.Text = "Update Table";
             this.IupdateTableBtn.UseVisualStyleBackColor = true;
+            this.IupdateTableBtn.Click += new System.EventHandler(this.IupdateTableBtn_Click);
             // 
             // viewInstructorGroupBox
             // 
@@ -297,6 +298,7 @@
             this.IuserIdComboBox.Name = "IuserIdComboBox";
             this.IuserIdComboBox.Size = new System.Drawing.Size(169, 23);
             this.IuserIdComboBox.TabIndex = 3;
+            this.IuserIdComboBox.SelectedIndexChanged += new System.EventHandler(this.IuserIdComboBox_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -333,6 +335,14 @@
             this.label9.TabIndex = 23;
             this.label9.Text = "Last Name";
             // 
+            // iFirstNameViewtextBox
+            // 
+            this.iFirstNameViewtextBox.Location = new System.Drawing.Point(123, 118);
+            this.iFirstNameViewtextBox.Name = "iFirstNameViewtextBox";
+            this.iFirstNameViewtextBox.ReadOnly = true;
+            this.iFirstNameViewtextBox.Size = new System.Drawing.Size(169, 21);
+            this.iFirstNameViewtextBox.TabIndex = 22;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -350,6 +360,14 @@
             this.label10.Size = new System.Drawing.Size(67, 15);
             this.label10.TabIndex = 21;
             this.label10.Text = "First Name";
+            // 
+            // iPasswordViewtextBox
+            // 
+            this.iPasswordViewtextBox.Location = new System.Drawing.Point(123, 76);
+            this.iPasswordViewtextBox.Name = "iPasswordViewtextBox";
+            this.iPasswordViewtextBox.ReadOnly = true;
+            this.iPasswordViewtextBox.Size = new System.Drawing.Size(169, 21);
+            this.iPasswordViewtextBox.TabIndex = 20;
             // 
             // InstructorDetailsgroupBox
             // 
@@ -384,6 +402,7 @@
             this.iUpdateBtn.Text = "Update";
             this.iUpdateBtn.UseVisualStyleBackColor = true;
             this.iUpdateBtn.Visible = false;
+            this.iUpdateBtn.Click += new System.EventHandler(this.iUpdateBtn_Click);
             // 
             // IclearBtn
             // 
@@ -393,6 +412,7 @@
             this.IclearBtn.TabIndex = 15;
             this.IclearBtn.Text = "Clear";
             this.IclearBtn.UseVisualStyleBackColor = true;
+            this.IclearBtn.Click += new System.EventHandler(this.IclearBtn_Click);
             // 
             // iPhoneTxtBox
             // 
@@ -410,6 +430,13 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Phone";
             // 
+            // iEmailTxtBox
+            // 
+            this.iEmailTxtBox.Location = new System.Drawing.Point(612, 40);
+            this.iEmailTxtBox.Name = "iEmailTxtBox";
+            this.iEmailTxtBox.Size = new System.Drawing.Size(169, 21);
+            this.iEmailTxtBox.TabIndex = 12;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -418,6 +445,13 @@
             this.label6.Size = new System.Drawing.Size(39, 15);
             this.label6.TabIndex = 11;
             this.label6.Text = "Email";
+            // 
+            // iLastNameTxtBox
+            // 
+            this.iLastNameTxtBox.Location = new System.Drawing.Point(379, 86);
+            this.iLastNameTxtBox.Name = "iLastNameTxtBox";
+            this.iLastNameTxtBox.Size = new System.Drawing.Size(147, 21);
+            this.iLastNameTxtBox.TabIndex = 10;
             // 
             // label3
             // 
@@ -466,7 +500,6 @@
             this.IuserIdTxtBox.Name = "IuserIdTxtBox";
             this.IuserIdTxtBox.Size = new System.Drawing.Size(156, 21);
             this.IuserIdTxtBox.TabIndex = 2;
-            this.IuserIdTxtBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -485,6 +518,7 @@
             this.iAddBtn.TabIndex = 0;
             this.iAddBtn.Text = "Add";
             this.iAddBtn.UseVisualStyleBackColor = true;
+            this.iAddBtn.Click += new System.EventHandler(this.iAddBtn_Click);
             // 
             // instructorDataGridView
             // 
@@ -682,6 +716,7 @@
             this.sClearButton.TabIndex = 15;
             this.sClearButton.Text = "Clear";
             this.sClearButton.UseVisualStyleBackColor = true;
+            this.sClearButton.Click += new System.EventHandler(this.sClearButton_Click);
             // 
             // sPhoneTextBox
             // 
@@ -1398,7 +1433,6 @@
             this.courseTabPage.TabIndex = 4;
             this.courseTabPage.Text = "Course";
             this.courseTabPage.UseVisualStyleBackColor = true;
-            this.courseTabPage.Click += new System.EventHandler(this.courseTabPage_Click);
             // 
             // coUpdateTableBtn
             // 
@@ -1558,36 +1592,6 @@
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // iFirstNameViewtextBox
-            // 
-            this.iFirstNameViewtextBox.Location = new System.Drawing.Point(123, 118);
-            this.iFirstNameViewtextBox.Name = "iFirstNameViewtextBox";
-            this.iFirstNameViewtextBox.ReadOnly = true;
-            this.iFirstNameViewtextBox.Size = new System.Drawing.Size(169, 21);
-            this.iFirstNameViewtextBox.TabIndex = 22;
-            // 
-            // iPasswordViewtextBox
-            // 
-            this.iPasswordViewtextBox.Location = new System.Drawing.Point(123, 76);
-            this.iPasswordViewtextBox.Name = "iPasswordViewtextBox";
-            this.iPasswordViewtextBox.ReadOnly = true;
-            this.iPasswordViewtextBox.Size = new System.Drawing.Size(169, 21);
-            this.iPasswordViewtextBox.TabIndex = 20;
-            // 
-            // iEmailTxtBox
-            // 
-            this.iEmailTxtBox.Location = new System.Drawing.Point(612, 40);
-            this.iEmailTxtBox.Name = "iEmailTxtBox";
-            this.iEmailTxtBox.Size = new System.Drawing.Size(169, 21);
-            this.iEmailTxtBox.TabIndex = 12;
-            // 
-            // iLastNameTxtBox
-            // 
-            this.iLastNameTxtBox.Location = new System.Drawing.Point(379, 86);
-            this.iLastNameTxtBox.Name = "iLastNameTxtBox";
-            this.iLastNameTxtBox.Size = new System.Drawing.Size(147, 21);
-            this.iLastNameTxtBox.TabIndex = 10;
             // 
             // AdminContainer
             // 

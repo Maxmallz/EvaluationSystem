@@ -12,6 +12,7 @@ namespace MainProgram.Forms.Instructor
 {
     public partial class InstructorContainer : Form
     {
+        public string InstructorFullName = string.Empty;
         public InstructorContainer()
         {
             InitializeComponent();
@@ -23,6 +24,11 @@ namespace MainProgram.Forms.Instructor
         }
 
         private void groupBox5_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InstructorContainer_Load(object sender, EventArgs e)
         {
 
         }

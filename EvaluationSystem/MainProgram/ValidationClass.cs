@@ -5,14 +5,43 @@ using System.Text;
 using System.Threading.Tasks;
 using IntermediateLibrary;
 using Models.Objects;
+using System.Windows.Forms;
 
 namespace MainProgram
 {
-    class ValidationClass
+    public static class Validation
     {
-        public ValidationClass()
+        public static bool IsCredentialValid(TextBox usernameTxtBox, TextBox passwordTxtBox, ErrorProvider errorProvider)
         {
-            
+            bool _isValid = false;
+            string username = usernameTxtBox.Text;
+            string password = passwordTxtBox.Text;
+            errorProvider.Clear();
+
+            if (string.IsNullOrEmpty(username))//Empty Username
+            {
+                errorProvider.SetError(usernameTxtBox, "Username cannot be blank");
+                usernameTxtBox.Focus();
+            }
+            else if (string.IsNullOrEmpty(password))//Empty Password
+            {
+                errorProvider.SetError(passwordTxtBox, "Password cannot be blank");
+                passwordTxtBox.Focus();
+            }
+            else if (username.Length >= 50)//Long Username
+            {
+                errorProvider.SetError(usernameTxtBox, "Username cannot be more than 50 characters");
+                usernameTxtBox.SelectAll();
+                usernameTxtBox.Focus();
+            }
+            else if (password.Length <= 5)//Short password
+            {
+                errorProvider.SetError(passwordTxtBox, "Password must be more than 5 characters");
+                passwordTxtBox.SelectAll();
+                passwordTxtBox.Focus();
+            }
+            else { _isValid = true; }
+            return _isValid;
         }
     }
 }

@@ -9,7 +9,7 @@ namespace InterfaceLibrary
 {
     public interface IUser
     {
-        int Login(string userId, string password);
+        UserObject.UserRole Login(string userId, string password, out string errorMsg);
         void Logout(UserObject user);
     }
 }

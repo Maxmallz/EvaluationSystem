@@ -12,9 +12,15 @@ namespace MainProgram.Forms.Student
 {
     public partial class StudentContainer : Form
     {
+        public string StudentFullName = string.Empty;
         public StudentContainer()
         {
             InitializeComponent();
+        }
+
+        private void StudentContainer_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -139,6 +139,7 @@ namespace DataAccessLibrary
                 {
                     using (sqlCon = new SqlConnection())
                     {
+                        OpenConnection();
                         sqlCmd = new SqlCommand(sqlSelect, sqlCon);
 
                         if (keyValuePairs != null)
@@ -148,10 +149,10 @@ namespace DataAccessLibrary
                                 sqlCmd.Parameters.AddWithValue(keyValuePair.Key, keyValuePair.Value);
                             }
                         }
-                        OpenConnection();
-
+                        
+                        object o = sqlCmd.ExecuteScalar();
                         scope.Complete();
-                        return sqlCmd.ExecuteScalar();
+                        return o;
                     }
                 }
             }
@@ -209,6 +210,7 @@ namespace DataAccessLibrary
                 {
                     using (sqlCon = new SqlConnection())
                     {
+                        OpenConnection();
                         sqlCmd = new SqlCommand(sqlSelect, sqlCon);
                         table = new DataTable();
                         adp = new SqlDataAdapter(sqlCmd);
@@ -220,7 +222,6 @@ namespace DataAccessLibrary
                                 sqlCmd.Parameters.AddWithValue(keyValuePair.Key, keyValuePair.Value);
                             }
                         }
-                        OpenConnection();
 
                         adp.Fill(table);
 

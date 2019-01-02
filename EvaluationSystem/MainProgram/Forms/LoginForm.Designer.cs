@@ -35,7 +35,7 @@
             this.usernameTxtBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.passwordTxtBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.forgotPasswordLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,6 +48,7 @@
             this.LoginButton.TabIndex = 0;
             this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = true;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // errorProvider1
             // 
@@ -89,22 +90,23 @@
             this.passwordTxtBox.Size = new System.Drawing.Size(236, 20);
             this.passwordTxtBox.TabIndex = 4;
             // 
-            // label2
+            // forgotPasswordLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(390, 276);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 15);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Forgot Password?";
+            this.forgotPasswordLabel.AutoSize = true;
+            this.forgotPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forgotPasswordLabel.Location = new System.Drawing.Point(390, 276);
+            this.forgotPasswordLabel.Name = "forgotPasswordLabel";
+            this.forgotPasswordLabel.Size = new System.Drawing.Size(106, 15);
+            this.forgotPasswordLabel.TabIndex = 5;
+            this.forgotPasswordLabel.Text = "Forgot Password?";
+            this.forgotPasswordLabel.Click += new System.EventHandler(this.forgotPasswordLabel_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 450);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.forgotPasswordLabel);
             this.Controls.Add(this.passwordTxtBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.usernameTxtBox);
@@ -123,7 +125,7 @@
         private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label forgotPasswordLabel;
         private System.Windows.Forms.TextBox passwordTxtBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox usernameTxtBox;
