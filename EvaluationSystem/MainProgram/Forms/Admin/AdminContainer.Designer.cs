@@ -36,7 +36,7 @@
             this.iPhoneViewTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.iEmailViewTextBox = new System.Windows.Forms.TextBox();
-            this.IuserIdComboBox = new System.Windows.Forms.ComboBox();
+            this.IuserIdViewComboBox = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.iLastNameViewTextBox = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -251,7 +251,7 @@
             this.viewInstructorGroupBox.Controls.Add(this.iPhoneViewTextBox);
             this.viewInstructorGroupBox.Controls.Add(this.label7);
             this.viewInstructorGroupBox.Controls.Add(this.iEmailViewTextBox);
-            this.viewInstructorGroupBox.Controls.Add(this.IuserIdComboBox);
+            this.viewInstructorGroupBox.Controls.Add(this.IuserIdViewComboBox);
             this.viewInstructorGroupBox.Controls.Add(this.label8);
             this.viewInstructorGroupBox.Controls.Add(this.iLastNameViewTextBox);
             this.viewInstructorGroupBox.Controls.Add(this.label12);
@@ -292,14 +292,14 @@
             this.iEmailViewTextBox.Size = new System.Drawing.Size(169, 21);
             this.iEmailViewTextBox.TabIndex = 26;
             // 
-            // IuserIdComboBox
+            // IuserIdViewComboBox
             // 
-            this.IuserIdComboBox.FormattingEnabled = true;
-            this.IuserIdComboBox.Location = new System.Drawing.Point(123, 31);
-            this.IuserIdComboBox.Name = "IuserIdComboBox";
-            this.IuserIdComboBox.Size = new System.Drawing.Size(169, 23);
-            this.IuserIdComboBox.TabIndex = 3;
-            this.IuserIdComboBox.SelectedIndexChanged += new System.EventHandler(this.IuserIdComboBox_SelectedIndexChanged);
+            this.IuserIdViewComboBox.FormattingEnabled = true;
+            this.IuserIdViewComboBox.Location = new System.Drawing.Point(123, 31);
+            this.IuserIdViewComboBox.Name = "IuserIdViewComboBox";
+            this.IuserIdViewComboBox.Size = new System.Drawing.Size(169, 23);
+            this.IuserIdViewComboBox.TabIndex = 3;
+            this.IuserIdViewComboBox.SelectedIndexChanged += new System.EventHandler(this.IuserIdComboBox_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -523,9 +523,14 @@
             // 
             // instructorDataGridView
             // 
+            this.instructorDataGridView.AllowUserToAddRows = false;
+            this.instructorDataGridView.AllowUserToDeleteRows = false;
+            this.instructorDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.instructorDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.instructorDataGridView.Location = new System.Drawing.Point(40, 245);
+            this.instructorDataGridView.MultiSelect = false;
             this.instructorDataGridView.Name = "instructorDataGridView";
+            this.instructorDataGridView.ReadOnly = true;
             this.instructorDataGridView.Size = new System.Drawing.Size(850, 252);
             this.instructorDataGridView.TabIndex = 4;
             // 
@@ -1666,7 +1671,7 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.TabPage courseTabPage;
         private System.Windows.Forms.DataGridView instructorDataGridView;
-        private System.Windows.Forms.ComboBox IuserIdComboBox;
+        private System.Windows.Forms.ComboBox IuserIdViewComboBox;
         private System.Windows.Forms.TextBox IuserIdTxtBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button iAddBtn;

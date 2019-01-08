@@ -15,6 +15,8 @@ namespace MainProgram.Forms.Admin
     public partial class AdminContainer : Form
     {
         public string AdminFullName = string.Empty;
+        DataTable insTbl, stuTbl, claTbl, couTbl, rubTbl;
+        BindingSource instructorBindingSrc, studentBindingSrc, classBindingSrc, courseBindingSrc, rubricBindingSrc;
         public AdminContainer()
         {
             InitializeComponent();
@@ -28,27 +30,102 @@ namespace MainProgram.Forms.Admin
             //populate datagrid view with data
             AdminConnect adminConnect = new AdminConnect();
 
-            instructorDataGridView.DataSource = adminConnect.GetInstructors();
+            insTbl = adminConnect.GetInstructors();
+            instructorDataGridView.DataSource = insTbl;
             FormClass.AddDatagridButtons(instructorDataGridView, 3, true);
 
-            studentDataGridView.DataSource = adminConnect.GetStudents();
+            stuTbl = adminConnect.GetStudents();
+            studentDataGridView.DataSource = stuTbl;
             FormClass.AddDatagridButtons(studentDataGridView, 3, true);
 
-            classDataGridView.DataSource = adminConnect.GetClasses();
+            claTbl = adminConnect.GetClasses();
+            classDataGridView.DataSource = claTbl;
             FormClass.AddDatagridButtons(classDataGridView, 3, true);
 
-            rubricDataGridView.DataSource = adminConnect.GetRubric();
+            rubTbl = adminConnect.GetRubric();
+            rubricDataGridView.DataSource = rubTbl;
             FormClass.AddDatagridButtons(rubricDataGridView, 3, true);
 
-            courseDataGridView.DataSource = adminConnect.GetCourse();
+            couTbl = adminConnect.GetCourse();
+            courseDataGridView.DataSource = couTbl;
             FormClass.AddDatagridButtons(courseDataGridView, 3, true);
 
-            //bind view instructor data table
-            //bind view student data table
-            //bind view class data table
-            //bind view course data table
-            //bind view rubric data table
+            //bind views to datatable
+            #region BindInstructor
+            try
+            {
+                instructorBindingSrc = new BindingSource();
+                instructorBindingSrc.DataSource = adminConnect.GetInstructors();
+                IuserIdViewComboBox.Items.Clear();
+                IuserIdViewComboBox.DataSource = instructorBindingSrc;
+                IuserIdViewComboBox.ValueMember = "userId";
+                IuserIdViewComboBox.DisplayMember = "userId";
+                IuserIdViewComboBox.DataBindings.Add("Text", instructorBindingSrc, "userId", false);
 
+                if (!string.IsNullOrEmpty((string)IuserIdViewComboBox.SelectedValue) && !string.IsNullOrEmpty(IuserIdViewComboBox.Text))
+                {
+                    //bind other controls
+                    iPasswordViewtextBox.DataBindings.Add("Text", instructorBindingSrc, "password", false);
+                    iFirstNameViewtextBox.DataBindings.Add("Text", instructorBindingSrc, "fName", false);
+                    iLastNameViewTextBox.DataBindings.Add("Text", instructorBindingSrc, "lName", false);
+                    iEmailViewTextBox.DataBindings.Add("Text", instructorBindingSrc, "email", false);
+                    iPhoneViewTextBox.DataBindings.Add("Text", instructorBindingSrc, "phone", false);
+                }
+                else
+                {
+                    errorProvider1.SetError(IuserIdViewComboBox, "Invalid selection");
+                    return;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            #endregion
+
+            #region BindStudent
+            try
+            {
+                studentBindingSrc = new BindingSource();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            #endregion
+
+            #region BindClass
+            try
+            {
+                classBindingSrc = new BindingSource();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            #endregion
+
+            #region BindCourse
+            try
+            {
+                courseBindingSrc = new BindingSource();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            #endregion
+
+            #region BindRubric
+            try
+            {
+                rubricBindingSrc = new BindingSource();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            #endregion
         }
 
         private void IupdateTableBtn_Click(object sender, EventArgs e)
