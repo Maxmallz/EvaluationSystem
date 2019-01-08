@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
 using Models.Objects;
 
 namespace InterfaceLibrary
@@ -13,5 +9,6 @@ namespace InterfaceLibrary
         int DeleteRubric(RubricObject rubric);
         int UpdateRubric(RubricObject rubric);
         RubricObject ViewRubric(int rubricId);
+        DataTable GetRubric();
     }
 }

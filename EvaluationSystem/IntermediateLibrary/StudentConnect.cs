@@ -7,7 +7,6 @@ using CommonLibrary;
 using System.Data.SqlClient;
 using System.Data;
 using DataAccessLibrary;
-using Models.Objects;
 
 namespace IntermediateLibrary
 {

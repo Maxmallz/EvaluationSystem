@@ -119,7 +119,7 @@
             this.classIdtextBox = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.addButton = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.classDataGridView = new System.Windows.Forms.DataGridView();
             this.rubricTabPage = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -189,7 +189,7 @@
             this.groupBox1.SuspendLayout();
             this.classGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.maxStudentNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classDataGridView)).BeginInit();
             this.rubricTabPage.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.rubricGroupBox.SuspendLayout();
@@ -234,6 +234,7 @@
             this.instructortabPage.TabIndex = 0;
             this.instructortabPage.Text = "Instructor";
             this.instructortabPage.UseVisualStyleBackColor = true;
+            this.instructortabPage.Enter += new System.EventHandler(this.instructortabPage_Enter);
             // 
             // IupdateTableBtn
             // 
@@ -836,7 +837,7 @@
             this.classTabPage.Controls.Add(this.button1);
             this.classTabPage.Controls.Add(this.groupBox1);
             this.classTabPage.Controls.Add(this.classGroupBox);
-            this.classTabPage.Controls.Add(this.dataGridView1);
+            this.classTabPage.Controls.Add(this.classDataGridView);
             this.classTabPage.Location = new System.Drawing.Point(4, 27);
             this.classTabPage.Name = "classTabPage";
             this.classTabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -1071,13 +1072,13 @@
             this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // classDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(44, 237);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(850, 252);
-            this.dataGridView1.TabIndex = 34;
+            this.classDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.classDataGridView.Location = new System.Drawing.Point(44, 237);
+            this.classDataGridView.Name = "classDataGridView";
+            this.classDataGridView.Size = new System.Drawing.Size(850, 252);
+            this.classDataGridView.TabIndex = 34;
             // 
             // rubricTabPage
             // 
@@ -1092,6 +1093,7 @@
             this.rubricTabPage.TabIndex = 3;
             this.rubricTabPage.Text = "Rubric";
             this.rubricTabPage.UseVisualStyleBackColor = true;
+            this.rubricTabPage.Enter += new System.EventHandler(this.rubricTabPage_Enter);
             // 
             // button2
             // 
@@ -1269,6 +1271,7 @@
             this.rubricGroupBox.TabIndex = 32;
             this.rubricGroupBox.TabStop = false;
             this.rubricGroupBox.Text = "Rubric Details";
+            this.rubricGroupBox.Enter += new System.EventHandler(this.rubricGroupBox_Enter);
             // 
             // classComboBox
             // 
@@ -1625,7 +1628,7 @@
             this.classGroupBox.ResumeLayout(false);
             this.classGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.maxStudentNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.classDataGridView)).EndInit();
             this.rubricTabPage.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -1743,7 +1746,7 @@
         private System.Windows.Forms.TextBox classIdtextBox;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Button addButton;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView classDataGridView;
         private System.Windows.Forms.ComboBox courseComboBox;
         private System.Windows.Forms.ComboBox classViewComboBox;
         private System.Windows.Forms.Button button2;

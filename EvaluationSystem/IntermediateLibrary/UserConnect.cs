@@ -7,7 +7,7 @@ using InterfaceLibrary;
 using Models.Objects;
 using DataAccessLibrary;
 using System.Data;
-using System.Data.SqlClient;
+using CommonLibrary;
 
 namespace IntermediateLibrary
 {
@@ -28,8 +28,6 @@ namespace IntermediateLibrary
                 userAccess = new DataAccess();
                 parameterLists = new List<ParameterList>();
                 errorMsg = "";
-                fullName = "";
-
 
                 string usernameSql, passwordSql, roleSql;
                 ParameterList usernameParam, roleParam;
@@ -42,11 +40,11 @@ namespace IntermediateLibrary
 
                 passwordSql = "select password from user_tbl where userId = @UserId";
 
-                usernameTask = userAccess.ExecuteScalar(usernameSql, parameterLists).ToString();
+                usernameTask = (string)userAccess.ExecuteScalar(usernameSql, parameterLists);
                 
                 if (usernameTask != null)//username exists
                 {
-                    passwordTask = userAccess.ExecuteScalar(passwordSql, parameterLists).ToString();
+                    passwordTask = (string)userAccess.ExecuteScalar(passwordSql, parameterLists);
 
                     if (passwordTask != null && (password.ToUpper().Equals(passwordTask.ToString().ToUpper())))//password exists and is equal
                     {
@@ -84,6 +82,7 @@ namespace IntermediateLibrary
             }
             catch (Exception ex)
             {
+                MyException.Log(ex);
                 throw;
             }
 

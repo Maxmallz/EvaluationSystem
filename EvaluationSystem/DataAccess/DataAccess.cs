@@ -262,7 +262,6 @@ namespace DataAccessLibrary
                         }
                         OpenConnection();
 
-                        int i;
                         adp.Fill(table);
 
                         Task task = Task.Run(()=> adp.Fill(table));

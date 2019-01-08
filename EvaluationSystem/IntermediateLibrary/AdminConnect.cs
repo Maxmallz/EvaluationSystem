@@ -303,6 +303,71 @@ namespace IntermediateLibrary
                 }
             }
         }
+        public DataTable GetClasses()
+        {
+            try
+            {
+                adminDataAccess = new DataAccess();
+                return adminDataAccess.GetData("select * from class_tbl");
+            }
+            catch (Exception ex)
+            {
+                MyException.Log(ex);
+                throw;
+            }
+        }
+        public DataTable GetCourse()
+        {
+            try
+            {
+                adminDataAccess = new DataAccess();
+                return adminDataAccess.GetData("select * from course_tbl");
+            }
+            catch (Exception ex)
+            {
+                MyException.Log(ex);
+                throw;
+            }
+        }
+        public DataTable GetInstructors()
+        {
+            try
+            {
+                adminDataAccess = new DataAccess();
+                return adminDataAccess.GetData("select * from user_tbl where roleid = 1");
+            }
+            catch (Exception ex)
+            {
+                MyException.Log(ex);
+                throw;
+            }
+        }
+        public DataTable GetRubric()
+        {
+            try
+            {
+                adminDataAccess = new DataAccess();
+                return adminDataAccess.GetData("select * from rubric_tbl");
+            }
+            catch (Exception ex)
+            {
+                MyException.Log(ex);
+                throw;
+            }
+        }
+        public DataTable GetStudents()
+        {
+            try
+            {
+                adminDataAccess = new DataAccess();
+                return adminDataAccess.GetData("select * from user_tbl where roleid = 2");
+            }
+            catch (Exception ex)
+            {
+                MyException.Log(ex);
+                throw;
+            }
+        }
         public int UpdateClass(ClassObject _class)
         {
             try

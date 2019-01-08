@@ -224,7 +224,7 @@ namespace IntermediateLibrary
             {
                 string Query = "UPDATE [dbo].[team_tbl] SET [teamName] = @TeamName, [classId] = @ClassId ,[minMember] = @MinMember,[maxMember] = @MaxMember, [createdBy] = @CreatedBy WHERE [teamId] = @TeamId";
 
-                SqlParameter param1, param2, param3, param4, param5, param6;
+                SqlParameter param1, param2, param3, param4, param5;
 
                 param1 = new SqlParameter("@TeamName", SqlDbType.NVarChar, 50, "teamName");
                 param1.Value = team.TeamName;
@@ -437,6 +437,16 @@ namespace IntermediateLibrary
                 MyException.Log(ex);
                 throw;
             }
+        }
+
+        public DataTable GetTeam()
+        {
+            throw new NotImplementedException();
+        }
+
+        public DataTable GetCriterion()
+        {
+            throw new NotImplementedException();
         }
     }
 }

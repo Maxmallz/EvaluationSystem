@@ -11,7 +11,7 @@ namespace MainProgram
 {
     public static class Validation
     {
-        public static bool IsCredentialValid(TextBox usernameTxtBox, TextBox passwordTxtBox, ErrorProvider errorProvider)
+        public static bool isCredentialValid(TextBox usernameTxtBox, TextBox passwordTxtBox, ErrorProvider errorProvider)
         {
             bool _isValid = false;
             string username = usernameTxtBox.Text;
@@ -42,6 +42,26 @@ namespace MainProgram
             }
             else { _isValid = true; }
             return _isValid;
+        }
+        public static bool isTextBoxValid(ErrorProvider errorProvider, params Control[] controls)
+        {
+            bool isValid = false;
+
+            errorProvider.Clear();
+            foreach (Control item in controls)
+            {
+                if (item.Text.Trim() == string.Empty)
+                {
+                    errorProvider.SetError(item, "Cannot be blank");
+                    isValid = false;
+                    break;
+                }
+                else
+                {
+                    isValid = true;
+                }
+            }
+            return isValid;
         }
     }
 }

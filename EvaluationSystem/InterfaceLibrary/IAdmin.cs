@@ -14,5 +14,7 @@ namespace InterfaceLibrary
         int DeleteUser<T>(T user) where T : UserObject;
         int UpdateUser<T>(T user) where T : UserObject;
         UserObject ViewUser(string userId, UserObject.UserRole userRole);
+        DataTable GetStudents();
+        DataTable GetInstructors();
     }
 }

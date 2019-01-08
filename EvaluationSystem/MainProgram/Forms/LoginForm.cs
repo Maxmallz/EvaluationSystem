@@ -22,7 +22,7 @@ namespace MainProgram
         private void LoginButton_Click(object sender, EventArgs e)
         {
             //validate user input
-            if(Validation.IsCredentialValid(usernameTxtBox, passwordTxtBox, errorProvider1))
+            if(Validation.isCredentialValid(usernameTxtBox, passwordTxtBox, errorProvider1))
             {
                 string errorMsg;
                 UserConnect userConnect = new UserConnect();
@@ -36,6 +36,7 @@ namespace MainProgram
 
                         Forms.Admin.AdminContainer adminContainer = new Forms.Admin.AdminContainer();
                         adminContainer.AdminFullName = userConnect.fullName;
+                        this.Hide();
                         adminContainer.Show();
 
                         break;
@@ -44,6 +45,7 @@ namespace MainProgram
 
                         Forms.Instructor.InstructorContainer instructorContainer = new Forms.Instructor.InstructorContainer();
                         instructorContainer.InstructorFullName = userConnect.fullName;
+                        this.Hide();
                         instructorContainer.Show();
 
                         break;
@@ -51,6 +53,7 @@ namespace MainProgram
 
                         Forms.Student.StudentContainer studentContainer = new Forms.Student.StudentContainer();
                         studentContainer.StudentFullName = userConnect.fullName;
+                        this.Hide();
                         studentContainer.Show();
 
                         break;
