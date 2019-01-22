@@ -59,6 +59,7 @@
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -93,13 +94,13 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logoutToolStripMenuItem.Text = "&Logout";
             // 
             // editToolStripMenuItem
@@ -247,6 +248,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button3);
             this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Controls.Add(this.groupBox4);
             this.tabPage2.Location = new System.Drawing.Point(4, 27);
@@ -340,6 +342,15 @@
             this.comboBox6.Size = new System.Drawing.Size(121, 23);
             this.comboBox6.TabIndex = 14;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(1090, 295);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(113, 23);
+            this.button3.TabIndex = 27;
+            this.button3.Text = "Export to Excel";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // StudentContainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -399,5 +410,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button3;
     }
 }

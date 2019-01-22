@@ -20,7 +20,7 @@ namespace MainProgram.Forms.Student
 
         private void StudentContainer_Load(object sender, EventArgs e)
         {
-
+            //do something
         }
     }
 }
