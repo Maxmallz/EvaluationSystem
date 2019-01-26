@@ -438,12 +438,10 @@ namespace IntermediateLibrary
                 throw;
             }
         }
-
         public DataTable GetTeam()
         {
             throw new NotImplementedException();
         }
-
         public DataTable GetCriterion()
         {
             throw new NotImplementedException();

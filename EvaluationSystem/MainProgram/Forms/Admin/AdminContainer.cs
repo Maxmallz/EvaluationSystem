@@ -150,6 +150,7 @@ namespace MainProgram.Forms.Admin
             //add instructor details
 
             if (!Validation.isTextBoxValid(errorProvider1, IuserIdTxtBox, iPasswordTxtBox, iFirstNameTxtBox, iLastNameTxtBox, iEmailTxtBox, iPhoneTxtBox)){return;}
+            //add instructor
         }
 
         private void IuserIdComboBox_SelectedIndexChanged(object sender, EventArgs e)

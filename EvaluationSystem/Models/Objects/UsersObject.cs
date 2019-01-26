@@ -14,9 +14,7 @@ namespace Models.Objects
         public enum UserRole { Admin, Instructor, Student}
         public UserObject()
         {
-            
-        }
-        
+        }       
         public string UserId { get; set; }
         public string Password { get; set; }
         public UserRole userRole { get; set; }
