@@ -136,7 +136,7 @@ namespace IntermediateLibrary
         {
             try
             {
-                if(typeof(StudentObject) != user.GetType() || typeof(InstructorObject) != user.GetType()) { throw new InvalidCastException(); }
+                if(typeof(StudentObject) != user.GetType() && typeof(InstructorObject) != user.GetType()) { throw new InvalidCastException(); }
                 else
                 {
                     string insQuery = $"INSERT INTO [dbo].[user_tbl] (userId, password, roleId, fName, lName, email, phone) VALUES(@UserId, @Password, @RoleId, @Fname, @Lname, @Email, @Phone); ";

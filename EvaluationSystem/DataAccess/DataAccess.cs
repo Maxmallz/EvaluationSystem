@@ -60,7 +60,7 @@ namespace DataAccessLibrary
             int i = 0;
             try
             {
-                using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required))
+                using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required, TransactionScopeAsyncFlowOption.Enabled))
                 {
                     using (sqlCon = new SqlConnection())
                     {
@@ -98,10 +98,11 @@ namespace DataAccessLibrary
             int i = 0;
             try
             {
-                using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required))
+                using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required, TransactionScopeAsyncFlowOption.Enabled))
                 {
                     using (sqlCon = new SqlConnection())
                     {
+                        OpenConnection();
                         sqlCmd = new SqlCommand(query, sqlCon);
                         cmdType = CommandType.Text;
 
@@ -112,7 +113,6 @@ namespace DataAccessLibrary
                                 sqlCmd.Parameters.Add(parameter);
                             }
                         }//add parameters
-                        OpenConnection();
 
                         i = await sqlCmd.ExecuteNonQueryAsync();
                         scope.Complete();
@@ -135,7 +135,7 @@ namespace DataAccessLibrary
         {
             try
             {
-                using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required))
+                using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required, TransactionScopeAsyncFlowOption.Enabled))
                 {
                     using (sqlCon = new SqlConnection())
                     {
@@ -171,7 +171,7 @@ namespace DataAccessLibrary
         {
             try
             {
-                using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required))
+                using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required, TransactionScopeAsyncFlowOption.Enabled))
                 {
                     using (sqlCon = new SqlConnection())
                     {
@@ -206,7 +206,7 @@ namespace DataAccessLibrary
         {
             try
             {
-                using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required))
+                using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required, TransactionScopeAsyncFlowOption.Enabled))
                 {
                     using (sqlCon = new SqlConnection())
                     {
@@ -245,7 +245,7 @@ namespace DataAccessLibrary
         {
             try
             {
-                using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required))
+                using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Required, TransactionScopeAsyncFlowOption.Enabled))
                 {
                     using (sqlCon = new SqlConnection())
                     {

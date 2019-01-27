@@ -20,7 +20,8 @@ namespace CommonLibrary
           System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
         static public int Log(Exception exception)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return 0;
         }
     }
 }

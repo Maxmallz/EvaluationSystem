@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using IntermediateLibrary;
 using CommonLibrary;
+using Models.Objects;
 
 namespace MainProgram.Forms.Admin
 {
@@ -17,6 +18,7 @@ namespace MainProgram.Forms.Admin
         public string AdminFullName = string.Empty;
         DataTable insTbl, stuTbl, claTbl, couTbl, rubTbl;
         BindingSource instructorBindingSrc, studentBindingSrc, classBindingSrc, courseBindingSrc, rubricBindingSrc;
+        AdminConnect adminConnect = null;
         public AdminContainer()
         {
             InitializeComponent();
@@ -141,7 +143,29 @@ namespace MainProgram.Forms.Admin
         private void iUpdateBtn_Click(object sender, EventArgs e)
         {
             //validate input
+            if (!Validation.isTextBoxValid(errorProvider1, IuserIdTxtBox, iPasswordTxtBox, iFirstNameTxtBox, iLastNameTxtBox, iEmailTxtBox, iPhoneTxtBox)) { return; }
+
             //update instructor details
+            adminConnect = new AdminConnect();
+            InstructorObject instructor = new InstructorObject();
+
+            instructor.UserId = IuserIdTxtBox.Text;
+            instructor.Password = iPasswordTxtBox.Text;
+            instructor.FirstName = iFirstNameTxtBox.Text;
+            instructor.LastName = iLastNameTxtBox.Text;
+            instructor.Phone = iPhoneTxtBox.Text;
+            instructor.Email = iEmailTxtBox.Text;
+
+            if (adminConnect.UpdateUser(instructor) <= 0)
+            {
+                //show error
+                MessageBox.Show("Instructor not added", "Add error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            }
+            else
+            {
+                //display success message
+                MessageBox.Show("Instructor added successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            }
         }
 
         private void iAddBtn_Click(object sender, EventArgs e)
@@ -150,7 +174,29 @@ namespace MainProgram.Forms.Admin
             //add instructor details
 
             if (!Validation.isTextBoxValid(errorProvider1, IuserIdTxtBox, iPasswordTxtBox, iFirstNameTxtBox, iLastNameTxtBox, iEmailTxtBox, iPhoneTxtBox)){return;}
+
             //add instructor
+
+            adminConnect = new AdminConnect();
+            InstructorObject instructor = new InstructorObject();
+
+            instructor.UserId = IuserIdTxtBox.Text;
+            instructor.Password = iPasswordTxtBox.Text;
+            instructor.FirstName = iFirstNameTxtBox.Text;
+            instructor.LastName = iLastNameTxtBox.Text;
+            instructor.Phone = iPhoneTxtBox.Text;
+            instructor.Email = iEmailTxtBox.Text;
+
+            if(adminConnect.AddUser(instructor) <= 0)
+            {
+                //show error
+                MessageBox.Show("Instructor not added", "Add error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            }
+            else
+            {
+                //display success message
+                MessageBox.Show("Instructor added successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            }
         }
 
         private void IuserIdComboBox_SelectedIndexChanged(object sender, EventArgs e)
