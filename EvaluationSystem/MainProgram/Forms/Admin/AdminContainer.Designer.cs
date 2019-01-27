@@ -828,6 +828,7 @@
             this.sAddButton.TabIndex = 0;
             this.sAddButton.Text = "Add";
             this.sAddButton.UseVisualStyleBackColor = true;
+            this.sAddButton.Click += new System.EventHandler(this.sAddButton_Click);
             // 
             // studentDataGridView
             // 

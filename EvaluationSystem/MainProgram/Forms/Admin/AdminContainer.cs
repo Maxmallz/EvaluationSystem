@@ -135,28 +135,23 @@ namespace MainProgram.Forms.Admin
             //reload datagrid table
         }
 
-        private void IclearBtn_Click(object sender, EventArgs e)
+        private void sAddButton_Click(object sender, EventArgs e)
         {
-            //clear instructor details
-        }
-
-        private void iUpdateBtn_Click(object sender, EventArgs e)
-        {
-            //validate input
             if (!Validation.isTextBoxValid(errorProvider1, IuserIdTxtBox, iPasswordTxtBox, iFirstNameTxtBox, iLastNameTxtBox, iEmailTxtBox, iPhoneTxtBox)) { return; }
 
-            //update instructor details
+            //add student
+
             adminConnect = new AdminConnect();
-            InstructorObject instructor = new InstructorObject();
+            StudentObject student = new StudentObject();
 
-            instructor.UserId = IuserIdTxtBox.Text;
-            instructor.Password = iPasswordTxtBox.Text;
-            instructor.FirstName = iFirstNameTxtBox.Text;
-            instructor.LastName = iLastNameTxtBox.Text;
-            instructor.Phone = iPhoneTxtBox.Text;
-            instructor.Email = iEmailTxtBox.Text;
+            student.UserId = IuserIdTxtBox.Text;
+            student.Password = iPasswordTxtBox.Text;
+            student.FirstName = iFirstNameTxtBox.Text;
+            student.LastName = iLastNameTxtBox.Text;
+            student.Phone = iPhoneTxtBox.Text;
+            student.Email = iEmailTxtBox.Text;
 
-            if (adminConnect.UpdateUser(instructor) <= 0)
+            if (adminConnect.AddUser(student) <= 0)
             {
                 //show error
                 MessageBox.Show("Instructor not added", "Add error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
@@ -166,6 +161,17 @@ namespace MainProgram.Forms.Admin
                 //display success message
                 MessageBox.Show("Instructor added successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
             }
+        }
+
+        private void IclearBtn_Click(object sender, EventArgs e)
+        {
+            //clear instructor details
+        }
+
+        private void iUpdateBtn_Click(object sender, EventArgs e)
+        {
+            //validate input
+            //update instructor details
         }
 
         private void iAddBtn_Click(object sender, EventArgs e)
