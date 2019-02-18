@@ -68,7 +68,7 @@ namespace IntermediateLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }

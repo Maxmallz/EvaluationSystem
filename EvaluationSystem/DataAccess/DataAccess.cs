@@ -36,7 +36,7 @@ namespace DataAccessLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }
@@ -51,7 +51,7 @@ namespace DataAccessLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }
@@ -84,7 +84,7 @@ namespace DataAccessLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
             finally
@@ -122,7 +122,7 @@ namespace DataAccessLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
             finally
@@ -158,7 +158,7 @@ namespace DataAccessLibrary
             }
             catch (Exception ex) 
             {
-                MyException.Log(ex);
+                
                 throw;
             }
             finally
@@ -193,7 +193,7 @@ namespace DataAccessLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
             finally
@@ -232,7 +232,7 @@ namespace DataAccessLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
             finally
@@ -275,7 +275,7 @@ namespace DataAccessLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
             finally

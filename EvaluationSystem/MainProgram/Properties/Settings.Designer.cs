@@ -26,7 +26,7 @@ namespace MainProgram.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-7O5BQ1H;Initial Catalog=SchoolDB;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-7O5BQ1H;Initial Catalog=mySchoolDb;Integrated Security=True")]
         public string schCS {
             get {
                 return ((string)(this["schCS"]));

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using InterfaceLibrary;
 using Models.Objects;
-using CommonLibrary;
 using System.Data.SqlClient;
 using System.Data;
 using DataAccessLibrary;
@@ -49,7 +48,7 @@ namespace IntermediateLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }
@@ -88,7 +87,7 @@ namespace IntermediateLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }
@@ -118,7 +117,7 @@ namespace IntermediateLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }
@@ -145,7 +144,7 @@ namespace IntermediateLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }
@@ -172,7 +171,7 @@ namespace IntermediateLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }
@@ -214,7 +213,7 @@ namespace IntermediateLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }
@@ -263,7 +262,7 @@ namespace IntermediateLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }
@@ -303,7 +302,7 @@ namespace IntermediateLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }
@@ -336,7 +335,7 @@ namespace IntermediateLibrary
             }
             catch(Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }
@@ -374,7 +373,7 @@ namespace IntermediateLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }
@@ -404,7 +403,7 @@ namespace IntermediateLibrary
             }
             catch (Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }
@@ -434,7 +433,7 @@ namespace IntermediateLibrary
             }
             catch(Exception ex)
             {
-                MyException.Log(ex);
+                
                 throw;
             }
         }

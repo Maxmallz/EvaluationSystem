@@ -713,6 +713,7 @@
             this.sUpdateButton.Text = "Update";
             this.sUpdateButton.UseVisualStyleBackColor = true;
             this.sUpdateButton.Visible = false;
+            this.sUpdateButton.Click += new System.EventHandler(this.sUpdateButton_Click);
             // 
             // sClearButton
             // 

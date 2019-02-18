@@ -137,19 +137,19 @@ namespace MainProgram.Forms.Admin
 
         private void sAddButton_Click(object sender, EventArgs e)
         {
-            if (!Validation.isTextBoxValid(errorProvider1, IuserIdTxtBox, iPasswordTxtBox, iFirstNameTxtBox, iLastNameTxtBox, iEmailTxtBox, iPhoneTxtBox)) { return; }
+            if (!Validation.isTextBoxValid(errorProvider1, sUserIdTextBox, sPassowrdtextBox, sFirstNametextBox, sLastNametextBox, sEmailTextBox, sPhoneTextBox)) { return; }
 
             //add student
 
             adminConnect = new AdminConnect();
             StudentObject student = new StudentObject();
 
-            student.UserId = IuserIdTxtBox.Text;
-            student.Password = iPasswordTxtBox.Text;
-            student.FirstName = iFirstNameTxtBox.Text;
-            student.LastName = iLastNameTxtBox.Text;
-            student.Phone = iPhoneTxtBox.Text;
-            student.Email = iEmailTxtBox.Text;
+            student.UserId = sUserIdTextBox.Text;
+            student.Password = sPassowrdtextBox.Text;
+            student.FirstName = sFirstNametextBox.Text;
+            student.LastName = sLastNametextBox.Text;
+            student.Phone = sPhoneTextBox.Text;
+            student.Email = sEmailTextBox.Text;
 
             if (adminConnect.AddUser(student) <= 0)
             {
@@ -163,16 +163,49 @@ namespace MainProgram.Forms.Admin
             }
         }
 
+        private void sUpdateButton_Click(object sender, EventArgs e)
+        {
+            //update student
+        }
+
         private void IclearBtn_Click(object sender, EventArgs e)
         {
-            //clear instructor details
+            //clear textboxes
+            IuserIdTxtBox.Clear();
+            iPasswordTxtBox.Clear();
+            iFirstNameTxtBox.Clear();
+            iLastNameTxtBox.Clear();
+            iPhoneTxtBox.Clear();
+            iEmailTxtBox.Clear();
         }
 
         private void iUpdateBtn_Click(object sender, EventArgs e)
         {
             //validate input
             //update instructor details
-        }
+            if(!Validation.isTextBoxValid(errorProvider1, iPasswordTxtBox, iFirstNameTxtBox, iLastNameTxtBox, iPhoneTxtBox, iEmailTxtBox)) { return; }
+
+            adminConnect = new AdminConnect();
+            InstructorObject instructor = new InstructorObject();
+
+            instructor.Password = iPasswordTxtBox.Text;
+            instructor.FirstName = iFirstNameTxtBox.Text;
+            instructor.LastName = iLastNameTxtBox.Text;
+            instructor.Phone = iPhoneTxtBox.Text;
+            instructor.Email = iEmailTxtBox.Text;
+
+            if(instructor != null && adminConnect.UpdateUser(instructor) <= 0)
+            { 
+                //show error
+                MessageBox.Show("Instructor not updated", "Update error", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            }
+            else
+            {
+                //display success message
+                MessageBox.Show("Instructor updated successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            }
+
+}
 
         private void iAddBtn_Click(object sender, EventArgs e)
         {
